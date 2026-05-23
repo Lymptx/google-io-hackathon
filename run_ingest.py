@@ -33,20 +33,33 @@ async def main() -> None:
         default=None,
         help="Maximum number of frames to sample (for quick testing/demos)"
     )
+    parser.add_argument(
+        "--transport", "-t",
+        type=str,
+        default="direct",
+        choices=["direct", "rocketride"],
+        help="GmiClient transport to use (default: direct)"
+    )
     
     args = parser.parse_args()
+    
+    from src.gmi_client import GmiClient
+    client = GmiClient(transport=args.transport)
     
     try:
         logger.info("Initializing VLM Soccer Coach Ingestion Ingest CLI...")
         await ingest_clip(
             video_path=args.video,
             out_path=args.out,
-            max_frames=args.max_frames
+            max_frames=args.max_frames,
+            client=client
         )
         logger.info("Ingestion completed successfully! Ingested database saved to: %s", args.out)
     except Exception as e:
         logger.exception("Ingestion pipeline failed")
         sys.exit(1)
+    finally:
+        await client.close()
 
 if __name__ == "__main__":
     asyncio.run(main())
