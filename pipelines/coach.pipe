@@ -10,12 +10,13 @@
 			"id": "llm_gmi_cloud_1",
 			"provider": "llm_gmi_cloud",
 			"config": {
-				"model": "google/gemini-3.1-pro-preview",
-				"serverbase": "https://api.gmi-serving.com/v1",
-				"apikey": "${GMI_API_KEY}",
-				"parameters": {
-					"temperature": 0.0
-				}
+				"profile": "custom",
+				"custom": {
+					"model": "google/gemini-3.1-pro-preview",
+					"serverbase": "https://api.gmi-serving.com/v1",
+					"apikey": "${GMI_API_KEY}"
+				},
+				"parameters": {}
 			},
 			"input": [{ "lane": "questions", "from": "chat_1" }],
 			"ui": { "position": { "x": 240, "y": 200 } }
