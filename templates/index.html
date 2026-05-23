@@ -117,6 +117,27 @@
             box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
         }
 
+        .upload-btn {
+            background: rgba(16, 185, 129, 0.12);
+            border: 1px solid rgba(16, 185, 129, 0.35);
+            color: #d1fae5;
+            padding: 0.55rem 1rem;
+            border-radius: 1.5rem;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .upload-status {
+            min-width: 8rem;
+            max-width: 14rem;
+            color: var(--text-muted);
+            font-size: 0.75rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
         /* Main Workspace */
         .workspace {
             flex: 1;
@@ -524,6 +545,9 @@
         </div>
         
         <div class="controls-section">
+            <input id="tactics-file" type="file" style="display: none;" onchange="uploadTactics(event)">
+            <button class="upload-btn" onclick="document.getElementById('tactics-file').click()">Upload Tactics</button>
+            <div id="tactics-upload-status" class="upload-status">Tactics: filesystem</div>
             <!-- Transport seam toggle -->
             <div class="transport-selector">
                 <button id="btn-direct" class="transport-btn active" onclick="setTransport('direct')">Direct GMI</button>
@@ -652,6 +676,35 @@
         function handleKeydown(event) {
             if (event.key === 'Enter') {
                 submitQuery();
+            }
+        }
+
+        async function uploadTactics(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const statusEl = document.getElementById('tactics-upload-status');
+            statusEl.innerText = 'Uploading tactics...';
+
+            try {
+                const response = await fetch('/api/tactics', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': file.type || 'application/octet-stream',
+                        'X-Filename': file.name
+                    },
+                    body: file
+                });
+                if (!response.ok) {
+                    throw new Error('Upload failed');
+                }
+                const data = await response.json();
+                statusEl.innerText = `Indexed source: ${data.filename}`;
+            } catch (err) {
+                console.error(err);
+                statusEl.innerText = 'Tactics upload failed';
+            } finally {
+                event.target.value = '';
             }
         }
 

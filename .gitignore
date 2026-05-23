@@ -1,0 +1,12 @@
+.env
+.env*
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+.cursor/
+.pytest_cache/
+*.mov
+*.mp4
+data/football_vid.mov
+football_vid.mov

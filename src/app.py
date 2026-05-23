@@ -1,13 +1,15 @@
 import logging
 import os
 from contextlib import asynccontextmanager
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from pathlib import Path
 
+from src.clip_summaries import export_clip_summaries
+from src.config import CLIP_SUMMARY_DIR, TACTICS_DIR
 from src.gmi_client import GmiClient
 from src.store import RecordStore
 from src.coach.agent import answer
@@ -135,6 +137,8 @@ async def lifespan(app: FastAPI):
         ]
         store = RecordStore(records=mock_records, window_reviews=mock_reviews)
         store.save(str(DB_PATH))
+
+    export_clip_summaries(store, CLIP_SUMMARY_DIR)
         
     yield
     logger.info("Shutting down FastAPI application.")
@@ -152,14 +156,19 @@ class AskRequest(BaseModel):
     query: str
     transport: str = "direct"  # "direct" or "rocketride"
 
+def _safe_upload_name(filename: str) -> str:
+    name = Path(filename or "tactics.txt").name.strip()
+    safe = "".join(ch if ch.isalnum() or ch in " .-_" else "_" for ch in name)
+    return safe or "tactics.txt"
+
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     """Renders the main Coach dashboard."""
     # We pass the store reviews and records to the dashboard for visualization
     return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
+        request=request,
+        name="index.html",
+        context={
             "reviews": [w.__dict__ for w in store.reviews()],
             "records": [r.__dict__ for r in store.all_records()]
         }
@@ -191,3 +200,31 @@ async def get_store():
         "records": [r.__dict__ for r in store.all_records()],
         "reviews": [w.__dict__ for w in store.reviews()]
     }
+
+@app.get("/api/tactics")
+async def list_tactics():
+    """Lists tactics files available for RocketRide filesystem indexing."""
+    tactics_dir = Path(TACTICS_DIR)
+    if not tactics_dir.exists():
+        return {"files": []}
+
+    files = []
+    for path in sorted(tactics_dir.iterdir()):
+        if path.is_file():
+            files.append({"filename": path.name, "size": path.stat().st_size})
+    return {"files": files}
+
+@app.post("/api/tactics")
+async def upload_tactics(request: Request):
+    """Saves a tactics document for RocketRide filesystem indexing."""
+    contents = await request.body()
+    if not contents:
+        raise HTTPException(status_code=400, detail="Uploaded tactics file is empty.")
+
+    tactics_dir = Path(TACTICS_DIR)
+    tactics_dir.mkdir(parents=True, exist_ok=True)
+    filename = _safe_upload_name(request.headers.get("x-filename", "tactics.txt"))
+    path = tactics_dir / filename
+    path.write_bytes(contents)
+
+    return {"filename": filename, "size": len(contents), "path": str(path)}

@@ -2,6 +2,8 @@ import logging
 import time
 from typing import Optional
 
+from src.clip_summaries import export_clip_summaries
+from src.config import CLIP_SUMMARY_DIR, SAMPLE_FPS
 from src.gmi_client import GmiClient
 from src.ingest.frames import sample_frames
 from src.ingest.analyze import analyze_frames_parallel
@@ -23,8 +25,8 @@ async def ingest_clip(
     if client is None:
         client = GmiClient(transport="direct")
         
-    # 1. Sample frames at 1 fps
-    frames = sample_frames(video_path, max_frames=max_frames)
+    # 1. Sample frames at configured FPS
+    frames = sample_frames(video_path, fps=SAMPLE_FPS, max_frames=max_frames)
     if not frames:
         raise ValueError(f"No frames sampled from video: {video_path}")
         
@@ -40,10 +42,11 @@ async def ingest_clip(
     # 5. Create store and save to disk
     store = RecordStore(records=records, window_reviews=reviews)
     store.save(out_path)
+    summary_path = export_clip_summaries(store, CLIP_SUMMARY_DIR)
     
     elapsed = time.time() - start_time
     logger.info(
-        "Ingestion pipeline completed in %.2fs. Processed %d frames and %d buckets.",
-        elapsed, len(records), len(buckets)
+        "Ingestion pipeline completed in %.2fs. Processed %d frames and %d buckets. Summary: %s",
+        elapsed, len(records), len(buckets), summary_path
     )
     return store

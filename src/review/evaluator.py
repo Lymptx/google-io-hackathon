@@ -4,7 +4,7 @@ import asyncio
 from typing import NamedTuple, List, Dict, Any
 from pathlib import Path
 
-from src.config import VISION_MODEL, BUCKET_SEC
+from src.config import EVALUATE_CONCURRENCY, VISION_MODEL, BUCKET_SEC
 from src.gmi_client import GmiClient
 from src.review.schema import FrameRecord, WindowReview
 
@@ -146,8 +146,15 @@ async def evaluate_bucket(client: GmiClient, bucket: Bucket) -> WindowReview:
 
 async def evaluate_buckets_parallel(client: GmiClient, buckets: List[Bucket]) -> List[WindowReview]:
     """Evaluates all buckets in parallel."""
-    logger.info("Starting parallel evaluation of %d buckets...", len(buckets))
-    tasks = [evaluate_bucket(client, b) for b in buckets]
+    concurrency = max(1, EVALUATE_CONCURRENCY)
+    logger.info("Starting evaluation of %d buckets with concurrency=%d...", len(buckets), concurrency)
+    semaphore = asyncio.Semaphore(concurrency)
+
+    async def evaluate_with_limit(bucket: Bucket) -> WindowReview:
+        async with semaphore:
+            return await evaluate_bucket(client, bucket)
+
+    tasks = [evaluate_with_limit(b) for b in buckets]
     reviews = await asyncio.gather(*tasks)
     logger.info("Finished parallel evaluation.")
     return sorted(reviews, key=lambda x: x.t_start)

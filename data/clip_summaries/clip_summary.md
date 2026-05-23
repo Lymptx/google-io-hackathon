@@ -1,0 +1,208 @@
+# Soccer Clip Tactical Summary
+
+## Window 0.0s to 5.0s
+Overall score: 8.5/10
+Passing score: 9.0/10
+Dribbling score: 7.0/10
+Possession score: 9.5/10
+Defending score: 8.0/10
+6-second rule: The team maintained a disciplined defensive shape throughout, though there were no immediate turnovers in the opponent's half to test the 6-second press.
+Supporting triangles: The ball carrier consistently maintained at least two passing options, demonstrating excellent positional awareness and support structures.
+Wing width: Width was successfully maintained across the entire 5-second window, effectively stretching the opponent's defensive block.
+Highlight: The team demonstrated high-level tactical patience at t=1.0 by utilizing wide channels to stretch the defensive block while maintaining compact internal triangles.
+Notes: The team is adhering strictly to the positional play philosophy, prioritizing structure and ball retention over risky vertical play.
+
+Frame evidence:
+- t=0.0s | possession=Red | summary=The red team is in possession of the ball in the middle third, attempting to progress up the field while the white team maintains a defensive structure. | events=possession, build-up | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=1.0s | possession=Red | summary=Liverpool (Red) is building play from the midfield, maintaining a wide shape to stretch the Real Madrid (White) defensive block. | events=possession, winger run, maintaining width | tags=possession, off-ball-run | width=True | support_options=2 | defense=compact triangles | pressing=delayed
+- t=2.0s | possession=Blue | summary=Real Madrid (white) is in possession in the middle third, attempting to progress the ball through the midfield while Liverpool (red) holds a structured defensive shape. | events=possession in midfield, maintaining width, structured buildup | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=3.0s | possession=Red | summary=Liverpool players are in possession of the ball in the midfield area, transitioning play while building up against the Real Madrid defensive shape. | events=possession build-up, midfield transition | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=4.0s | possession=Red | summary=The teams are positioned in the middle third during a calm phase of play with no immediate pressure on the player in possession. | events=possession maintenance, positional buildup | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+
+## Window 5.0s to 10.0s
+Overall score: 7.5/10
+Passing score: 8.0/10
+Dribbling score: 7.0/10
+Possession score: 8.5/10
+Defending score: 6.0/10
+6-second rule: The red team maintained possession throughout this window, meaning the 6-second rule was not triggered.
+Supporting triangles: The team successfully maintained the required two supporting passing options for the ball carrier throughout the entire 5-second interval.
+Wing width: The red team consistently maintained wide positioning, effectively stretching the opponent's defensive structure as per the tactical plan.
+Highlight: The consistent maintenance of wide width and triangular support structures during the midfield build-up at 7.0s facilitated safe ball progression.
+Notes: The team demonstrates good positional discipline in possession, but the defensive structure remained 'loose' instead of compact, which could be exploited during transitions.
+
+Frame evidence:
+- t=5.0s | possession=Red | summary=Red team is in possession in the middle third, attempting to circulate the ball while maintaining a wide shape. | events=possession, wide positioning, ball circulation | tags=possession | width=True | support_options=2 | defense=loose | pressing=none
+- t=6.0s | possession=Red | summary=The red team is in possession in their own half, attempting to build up play while the white team maintains a defensive shape. | events=possession, build-up play | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=7.0s | possession=Red | summary=The red team is in possession in the middle third, maintaining a wide structure while looking for forward passing options. | events=possession, winger run | tags=possession, off-ball-run | width=True | support_options=2 | defense=loose | pressing=none
+- t=8.0s | possession=Red | summary=The Red team is in possession at the halfway line, building play through the center while maintaining a spread formation. | events=possession, dribble | tags=possession, dribble | width=True | support_options=2 | defense=loose | pressing=delayed
+- t=9.0s | possession=Red | summary=The red team is in possession of the ball in the midfield area, transitioning slowly while maintaining a balanced structure. | events=possession, slow buildup | tags=possession | width=True | support_options=2 | defense=loose | pressing=none
+
+## Window 10.0s to 15.0s
+Overall score: 6.5/10
+Passing score: 7.0/10
+Dribbling score: 6.0/10
+Possession score: 7.5/10
+Defending score: 5.0/10
+6-second rule: The team failed to demonstrate the high-intensity pressing required during the Red team's buildup, showing a lack of urgency to win the ball back immediately.
+Supporting triangles: The team consistently maintained the required two supporting passing options for the ball carrier throughout the possession phase.
+Wing width: The team successfully maintained consistent width on the flanks, effectively stretching the opponent's defensive structure during build-up play.
+Highlight: The transition at 13.0s highlighted a failure in the high-press, as the White team failed to capitalize on the Red team's build-up from the back.
+Notes: While the team is excellent at maintaining positional structure and passing triangles in possession, the defensive off-the-ball work lacks the required intensity to match the high-pressing philosophy.
+
+Frame evidence:
+- t=10.0s | possession=Blue | summary=The white team is in possession in the middle third, maintaining a balanced structure against the red team's defensive formation. | events=possession, positional buildup | tags=possession | width=True | support_options=2 | defense=loose | pressing=none
+- t=11.0s | possession=Blue | summary=The white team is in possession in the middle of the pitch, looking to progress while the red team maintains a disciplined defensive shape. | events=possession, midfield transition | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=12.0s | possession=Blue | summary=The ball is in transition in the middle third with the white team circulating possession while the red team maintains a balanced defensive shape. | events=possession circulation, positional buildup | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=delayed
+- t=13.0s | possession=Red | summary=The Red team is in possession in their own half, building up play from the back against a high-pressing White team. | events=possession, build-up | tags=possession | width=True | support_options=2 | defense=stretched | pressing=none
+- t=14.0s | possession=Red | summary=A Liverpool player in the left-midfield area is in possession of the ball, looking to progress play against a spread Real Madrid defensive block. | events=possession, dribble, off-ball-run | tags=possession, dribble, off-ball-run | width=True | support_options=2 | defense=stretched | pressing=none
+
+## Window 15.0s to 20.0s
+Overall score: 8.5/10
+Passing score: 9.0/10
+Dribbling score: 8.0/10
+Possession score: 9.0/10
+Defending score: 8.5/10
+6-second rule: The Red team demonstrated effective pressing intensity between 16.0s and 17.0s, successfully challenging the opponent immediately after a loss of possession.
+Supporting triangles: The team largely maintained the required two supporting options for the ball carrier, with only a minor temporary lapse at 17.0s.
+Wing width: The team consistently maintained width across the entire 5-second window, effectively stretching the opponent's defensive block.
+Highlight: The Red team successfully regained possession at 19.0s and immediately transitioned back into a structured positional buildup.
+Notes: The team shows high tactical discipline, particularly in maintaining compact defensive structures and rapid recovery of possession. The momentary drop in supporting options at 17.0s should be addressed to ensure constant passing outlets.
+
+Frame evidence:
+- t=15.0s | possession=Red | summary=The Red team is in possession in the middle third with players distributed across the pitch, while the White team maintains a balanced defensive shape. | events=possession, positional buildup | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=16.0s | possession=Blue | summary=A White player dribbles the ball through the center of the midfield under pressure from Red players. | events=dribble, pressing | tags=dribble, possession, press | width=True | support_options=0 | defense=compact triangles | pressing=immediate
+- t=17.0s | possession=Blue | summary=The white team is in possession of the ball in the middle third and is being actively challenged by a red team defender. | events=dribbling, pressing | tags=dribble, press, possession | width=True | support_options=1 | defense=compact triangles | pressing=immediate
+- t=18.0s | possession=Blue | summary=The white team is in possession in the middle third, attempting to progress while the red team maintains a balanced defensive shape. | events=possession, off-ball-run | tags=possession, off-ball-run | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=19.0s | possession=Red | summary=The red team is in possession of the ball in the middle third, progressing forward while maintaining a balanced structure against the white team's defensive block. | events=possession, progression | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+
+## Window 20.0s to 25.0s
+Overall score: 6.5/10
+Passing score: 6.0/10
+Dribbling score: 7.0/10
+Possession score: 7.5/10
+Defending score: 5.0/10
+6-second rule: The team failed to demonstrate the high-intensity pressing required by the 6-second rule following the turnover at t=21.0.
+Supporting triangles: The team generally maintained effective support structures in possession, consistently providing the ball carrier with at least two passing options.
+Wing width: Width was consistently maintained throughout the possession phases, successfully stretching the opponent's defensive block.
+Highlight: The Red team successfully utilized wide positioning at t=24.0 to initiate a structured transition into the attacking third.
+Notes: While in-possession structure and width are meeting tactical goals, the team displayed a lack of urgency in defensive transitions, specifically failing to trigger the immediate high press after losing possession.
+
+Frame evidence:
+- t=20.0s | possession=Red | summary=The ball carrier in red is progressing through the midfield while being challenged by white defenders. | events=dribble, pressing | tags=dribble, press, possession | width=True | support_options=2 | defense=compact triangles | pressing=immediate
+- t=21.0s | possession=None | summary= | events=none | tags=none | width=False | support_options=0 | defense=unknown | pressing=none
+- t=22.0s | possession=Blue | summary=The white team is in possession in the middle third, progressing the ball forward while the red team maintains a disciplined defensive block. | events=possession, progression, maintaining structure | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=23.0s | possession=Blue | summary=A long pass is being played forward towards the attacking third by the team in white. | events=long pass, transition | tags=pass | width=True | support_options=0 | defense=loose | pressing=none
+- t=24.0s | possession=Red | summary=The red team is in possession in their own half, with players spread out wide, looking to transition into an attack. | events=possession, winger run, wide positioning | tags=possession, off-ball-run | width=True | support_options=2 | defense=compact triangles | pressing=none
+
+## Window 25.0s to 30.0s
+Overall score: 6.5/10
+Passing score: 7.0/10
+Dribbling score: 6.0/10
+Possession score: 8.0/10
+Defending score: 5.0/10
+6-second rule: The team failed to apply the immediate 6-second press upon losing possession at t=26.0, opting for a defensive recovery instead.
+Supporting triangles: The team consistently provided at least two passing options throughout the sequence, adhering well to the positional structure requirements.
+Wing width: Width was consistently maintained across all frames, successfully stretching the opponent's defensive block during build-up play.
+Highlight: At t=26.0, the failure to initiate an immediate high press allowed the opponent to transition comfortably into a settled middle-third possession.
+Notes: While the in-possession positional play is disciplined and compliant with the philosophy, the defensive transition phase is passive and lacks the intensity required by the high-press game plan.
+
+Frame evidence:
+- t=25.0s | possession=Red | summary=The ball is being played forward by a Red player in the middle third towards an advancing teammate, while the opposing team retreats. | events=pass, off-ball-run | tags=pass, off-ball-run, possession | width=True | support_options=2 | defense=loose | pressing=delayed
+- t=26.0s | possession=Blue | summary=A White team player in the middle third is advancing with the ball while Red team players track back to recover defensive positions. | events=dribble, defensive recovery, transition | tags=dribble, possession | width=True | support_options=2 | defense=loose | pressing=delayed
+- t=27.0s | possession=Blue | summary=The white team is circulating the ball in the middle third while the red team maintains a balanced defensive shape. | events=possession circulation, positional structure maintenance | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=28.0s | possession=Red | summary=The red team is in possession in the middle third, building up play from the back while the white team maintains a mid-block defensive shape. | events=possession build-up, maintaining width | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=29.0s | possession=Red | summary=The Red team is in possession in their own half, preparing to build up play through the midfield. | events=possession, build-up | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+
+## Window 30.0s to 35.0s
+Overall score: 7.5/10
+Passing score: 8.0/10
+Dribbling score: 7.0/10
+Possession score: 8.5/10
+Defending score: 5.0/10
+6-second rule: The team failed to demonstrate immediate high-intensity pressing upon the turnover at 32.0s, favoring a delayed structure instead of the required aggressive trap.
+Supporting triangles: The team consistently maintained at least two supporting passing options for the ball carrier, adhering well to the positional play guidelines.
+Wing width: Width was consistently maintained across the window, effectively stretching the opponent's defensive block to create space in the central channels.
+Highlight: The Red team successfully utilized wide positioning and consistent supporting structures to maintain possession and progress the ball through the midfield despite defensive pressure.
+Notes: While the in-possession positional play is excellent and adheres strictly to the Guardiola-influenced structure, the transition to defense remains too passive; the coaching staff needs to enforce the '6-second rule' more aggressively to regain possession quickly.
+
+Frame evidence:
+- t=30.0s | possession=Red | summary=The Red team player carries the ball in the center circle while the team maintains wide positioning to facilitate build-up play. | events=ball progression, maintaining width | tags=possession, dribble | width=True | support_options=2 | defense=compact triangles | pressing=delayed
+- t=31.0s | possession=Red | summary=A Liverpool player has possession of the ball in the center circle and looks to progress play against a settled Real Madrid defensive block. | events=possession, build-up | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=32.0s | possession=Blue | summary=The white team is in possession in the midfield, progressing the ball forward while the red team maintains a defensive structure to block passing lanes. | events=possession, dribble, off-ball-run | tags=possession, dribble, off-ball-run | width=True | support_options=2 | defense=compact triangles | pressing=delayed
+- t=33.0s | possession=Red | summary=The red team is in possession in the midfield, moving the ball forward while maintaining structural width. | events=possession maintenance, positional play, winger positioning | tags=possession, off-ball-run | width=True | support_options=2 | defense=compact triangles | pressing=delayed
+- t=34.0s | possession=Red | summary=A Liverpool player in possession carries the ball through the midfield against a Real Madrid defensive block. | events=dribble, possession maintenance | tags=dribble, possession | width=True | support_options=2 | defense=compact triangles | pressing=delayed
+
+## Window 35.0s to 40.0s
+Overall score: 4.5/10
+Passing score: 5.0/10
+Dribbling score: 6.0/10
+Possession score: 5.0/10
+Defending score: 2.0/10
+6-second rule: The team failed to initiate an immediate press upon loss of possession, opting for delayed reactions instead of the mandated high-intensity pressure.
+Supporting triangles: The team maintained supporting options for most of the window, though dropped to a single option during a critical dribble at t=38.0s.
+Wing width: The team effectively maintained width throughout the window to stretch the opponent's defensive structure.
+Highlight: The failure to apply high-intensity pressure during the transition at t=37.0s allowed the opponent to progress the ball through the midfield unchallenged.
+Notes: The defensive line is too passive out of possession; the transition from a compact structure to a high press is non-existent, violating the core pressing philosophy.
+
+Frame evidence:
+- t=35.0s | possession=Blue | summary=The white team is in possession in the midfield, looking to progress the ball against the red team's mid-block structure. | events=possession, midfield transition | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=delayed
+- t=36.0s | possession=Blue | summary=The white team is transitioning into a build-up phase with the ball at midfield, while the red team retreats into a mid-block defensive shape. | events=possession build-up, mid-block positioning, defensive transition | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=delayed
+- t=37.0s | possession=Red | summary=A red team player in possession is advancing the ball through the middle while the white team maintains a structured defensive block. | events=possession, ball progression | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=38.0s | possession=Red | summary=The Red team player carries the ball toward the right flank while maintaining possession in the attacking half. | events=dribble, possession | tags=dribble, possession | width=True | support_options=1 | defense=compact triangles | pressing=none
+- t=39.0s | possession=Red | summary=The Red team is in possession in the attacking third, utilizing width to stretch the white defensive line. | events=possession, winger run, stretching play | tags=possession, off-ball-run | width=True | support_options=2 | defense=stretched | pressing=delayed
+
+## Window 40.0s to 45.0s
+Overall score: 6.5/10
+Passing score: 7.0/10
+Dribbling score: 6.0/10
+Possession score: 8.0/10
+Defending score: 5.0/10
+6-second rule: The team failed to demonstrate the aggressive high press required by the 6-second rule, showing inconsistency in transition intensity.
+Supporting triangles: The team maintained excellent structural discipline with at least two supporting passing options for the ball carrier throughout the possession phases.
+Wing width: Width was consistently maintained during attacking phases, effectively stretching the opponent's defensive block.
+Highlight: The most significant tactical moment was the successful maintenance of passing triangles during the blue team's buildup in the attacking third, providing consistent outlets under pressure.
+Notes: While the in-possession positional play is well-drilled and structured, the out-of-possession defensive intensity must increase to align with the high-press philosophy; the team was too passive when transitioning to defense.
+
+Frame evidence:
+- t=40.0s | possession=Blue | summary=The white team is in possession in the attacking third, working the ball toward the edge of the penalty area while the red team maintains a compact defensive block. | events=possession, attacking progression | tags=possession, pass | width=True | support_options=2 | defense=compact triangles | pressing=delayed
+- t=41.0s | possession=Red | summary=The red team is maintaining possession in the midfield as the white team maintains a compact defensive block near their penalty area. | events=possession, positional buildup | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=42.0s | possession=Blue | summary=A Liverpool player in white is attempting to dribble past a Red defender near the edge of the penalty area while teammates position themselves for a potential cross or shot. | events=dribble, attacking phase, positioning | tags=dribble, possession, off-ball-run | width=True | support_options=2 | defense=compact triangles | pressing=immediate
+- t=43.0s | possession=Red | summary=The Red team is attacking in the final third with a cross coming into the penalty area, while the White team defends deep. | events=cross, off-ball-run, attacking positioning | tags=possession, off-ball-run | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=44.0s | possession=Blue | summary=The white team is in possession inside the attacking third, working the ball against a structured red defensive block. | events=possession, attacking third buildup | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+
+## Window 45.0s to 50.0s
+Overall score: 4.5/10
+Passing score: 5.0/10
+Dribbling score: 6.0/10
+Possession score: 5.5/10
+Defending score: 2.0/10
+6-second rule: The team failed to apply any pressure immediately following the transition at 48.0s, completely neglecting the 6-second rule.
+Supporting triangles: Support structure was inconsistent, falling below the required minimum of two options in frames 46.0s and 47.0s.
+Wing width: The team successfully maintained tactical width throughout the window, keeping the pitch stretched despite the lack of attacking penetration.
+Highlight: The transition at 48.0s revealed a significant tactical lapse as the team retreated into a block rather than engaging in the required high press.
+Notes: The team is prioritizing defensive stability over the high-pressing philosophy requested; the lack of intensity during the turnover phase allowed the opponent to settle in the middle third too easily.
+
+Frame evidence:
+- t=45.0s | possession=Red | summary=The defending team is organized in a deep, compact block inside their own penalty area while the attacking team maintains possession around the box. | events=possession, defensive block, positional play | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=46.0s | possession=Red | summary=The team in red (Liverpool) is in possession and maneuvering the ball in the attacking half against a set defensive block from Real Madrid. | events=possession, attacking buildup | tags=possession | width=True | support_options=1 | defense=compact triangles | pressing=none
+- t=47.0s | possession=Red | summary=The Red team in possession is advancing the ball through the midfield against a set defensive block. | events=possession, dribble, off-ball-run | tags=possession, dribble, off-ball-run | width=True | support_options=1 | defense=compact triangles | pressing=delayed
+- t=48.0s | possession=Blue | summary=The white team is in possession in the middle third, attempting to progress the ball against the red team's defensive block. | events=possession, build-up play | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=49.0s | possession=Blue | summary=Liverpool's defense is transitioning back into a structured shape as Real Madrid works the ball forward in the middle third. | events=possession maintenance, positional buildup | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+
+## Window 50.0s to 55.0s
+Overall score: 6.5/10
+Passing score: 7.0/10
+Dribbling score: 0.0/10
+Possession score: 7.5/10
+Defending score: 5.0/10
+6-second rule: The lack of pressing intensity from the defensive unit suggests a failure to apply the 6-second rule when out of possession.
+Supporting triangles: The team consistently maintained at least two supporting passing options, adhering well to the positional structure guidelines.
+Wing width: The team successfully maintained width on the wings, stretching the opponent's defensive block throughout the build-up phase.
+Highlight: The transition phase at 52.0s demonstrated disciplined off-ball movement, although it lacked the required aggressive defensive pressure.
+Notes: While the in-possession structure is excellent and follows the Tik-Taka blueprint, the out-of-possession phase is too passive, violating the high-pressing philosophy requested by the coach.
+
+Frame evidence:
+- t=50.0s | possession=Blue | summary=The white team is in possession in their own defensive third, looking to build out from the back while the red team maintains a disciplined mid-block shape. | events=possession build-up, defensive organization | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=51.0s | possession=Red | summary=Liverpool (Red) is building play from deep with central defenders while the Real Madrid (White) team is sitting in a mid-to-low block. | events=possession, build-up | tags=possession | width=True | support_options=2 | defense=compact triangles | pressing=none
+- t=52.0s | possession=Blue | summary=Liverpool players in red are maintaining a defensive structure while Real Madrid players in white are transitioning across the middle third. | events=transition, off-ball-run | tags=possession, off-ball-run | width=True | support_options=2 | defense=compact triangles | pressing=none

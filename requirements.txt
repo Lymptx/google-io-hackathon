@@ -9,6 +9,7 @@ openai
 pyarrow
 opencv-python-headless
 pytest
+pytest-asyncio
 python-dotenv
 json5
 websockets

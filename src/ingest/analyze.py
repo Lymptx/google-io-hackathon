@@ -1,9 +1,8 @@
 import logging
 import asyncio
-from concurrent.futures import ThreadPoolExecutor
 from typing import List
 
-from src.config import VISION_MODEL
+from src.config import ANALYZE_CONCURRENCY, VISION_MODEL
 from src.gmi_client import GmiClient
 from src.ingest.frames import FrameRef
 from src.review.schema import FrameRecord, coerce_record
@@ -40,9 +39,15 @@ async def analyze_frame(client: GmiClient, ref: FrameRef) -> FrameRecord:
 
 async def analyze_frames_parallel(client: GmiClient, refs: List[FrameRef]) -> List[FrameRecord]:
     """Analyzes a list of frames concurrently using asyncio.gather."""
-    logger.info("Starting parallel analysis of %d frames...", len(refs))
+    concurrency = max(1, ANALYZE_CONCURRENCY)
+    logger.info("Starting analysis of %d frames with concurrency=%d...", len(refs), concurrency)
+    semaphore = asyncio.Semaphore(concurrency)
     
-    tasks = [analyze_frame(client, ref) for ref in refs]
+    async def analyze_with_limit(ref: FrameRef) -> FrameRecord:
+        async with semaphore:
+            return await analyze_frame(client, ref)
+
+    tasks = [analyze_with_limit(ref) for ref in refs]
     records = await asyncio.gather(*tasks)
     
     # Sort by timestamp

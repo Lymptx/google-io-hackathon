@@ -6,25 +6,36 @@ routed pipeline execution via RocketRide.
 
 import json
 import logging
-import os
-import asyncio
-from typing import Dict, Any, List, Optional
+from typing import Any, Optional
 
 import openai
-from rocketride.client import RocketRideClient
-from rocketride.schema.question import Question
 
 from src.config import (
-    COACH_MODEL,
+    CLIP_SUMMARY_DIR,
     GMI_API_KEY,
     GMI_BASE_URL,
+    TACTICS_DIR,
     VISION_MODEL,
     ROCKETRIDE_URI,
     ROCKETRIDE_APIKEY,
     ROCKETRIDE_PIPE_PATH,
+    ROCKETRIDE_SOURCE,
+    ROCKETRIDE_TASK_TOKEN,
 )
 
 logger = logging.getLogger(__name__)
+
+def _load_rocketride() -> tuple[Any, Any]:
+    """Import RocketRide only when the optional transport is requested."""
+    try:
+        from rocketride.client import RocketRideClient
+        from rocketride.schema.question import Question
+    except ModuleNotFoundError as exc:
+        raise RuntimeError(
+            "RocketRide transport requires the optional 'rocketride' package. "
+            "Install it or use transport='direct'."
+        ) from exc
+    return RocketRideClient, Question
 
 class GmiClient:
     """Wraps OpenAI SDK (for direct GMI) and RocketRide Client."""
@@ -40,7 +51,7 @@ class GmiClient:
         )
         
         # RocketRide Client
-        self._rr_client: Optional[RocketRideClient] = None
+        self._rr_client: Optional[Any] = None
         self._rr_token: Optional[str] = None
         
         logger.info("GmiClient initialised with transport=%s", transport)
@@ -48,6 +59,7 @@ class GmiClient:
     async def initialize(self) -> None:
         """Connects and boots up RocketRide if using rocketride transport."""
         if self.transport == "rocketride" and not self._rr_client:
+            RocketRideClient, _ = _load_rocketride()
             logger.info("Initializing RocketRide client on %s", ROCKETRIDE_URI)
             self._rr_client = RocketRideClient(
                 uri=ROCKETRIDE_URI,
@@ -58,7 +70,17 @@ class GmiClient:
             
             # Start/use our designated coach pipeline
             logger.info("Loading RocketRide pipeline: %s", ROCKETRIDE_PIPE_PATH)
-            task_info = await self._rr_client.use(filepath=ROCKETRIDE_PIPE_PATH)
+            task_info = await self._rr_client.use(
+                filepath=ROCKETRIDE_PIPE_PATH,
+                source=ROCKETRIDE_SOURCE,
+                token=ROCKETRIDE_TASK_TOKEN,
+                use_existing=True,
+                env={
+                    "GMI_API_KEY": GMI_API_KEY,
+                    "ROCKETRIDE_CLIP_SUMMARY_PATH": CLIP_SUMMARY_DIR,
+                    "ROCKETRIDE_TACTICS_PATH": TACTICS_DIR,
+                },
+            )
             self._rr_token = task_info["token"]
             logger.info("RocketRide pipeline ready. Token: %s", self._rr_token)
 
@@ -74,6 +96,7 @@ class GmiClient:
         """Send messages and return the plain text reply."""
         if self.transport == "rocketride":
             await self.initialize()
+            _, Question = _load_rocketride()
             
             # Compile messages into a clean prompt string for RocketRide's chat node
             # The chat node expects a single user question or context
@@ -99,6 +122,7 @@ class GmiClient:
         """Send messages and expect a structured JSON-object reply."""
         if self.transport == "rocketride":
             await self.initialize()
+            _, Question = _load_rocketride()
             
             prompt = "\n".join([f"{m['role'].upper()}: {m['content']}" for m in messages])
             
@@ -155,4 +179,15 @@ class GmiClient:
                 },
             ],
         }
-        return await self.chat_json([message], model)
+        resp = await self._openai_client.chat.completions.create(
+            model=model,
+            messages=[message],
+            response_format={"type": "json_object"},
+        )
+        content = resp.choices[0].message.content
+        if content is None:
+            raise ValueError("Model returned no content (expected JSON).")
+        try:
+            return json.loads(content)
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"Model returned non-JSON content: {content!r}") from exc

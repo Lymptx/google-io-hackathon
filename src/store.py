@@ -1,7 +1,8 @@
 import json
 import logging
 from dataclasses import asdict
-from typing import List, Dict, Any
+from pathlib import Path
+from typing import List
 
 from src.review.schema import FrameRecord, WindowReview, coerce_record
 
@@ -23,12 +24,14 @@ class RecordStore:
     def save(self, path: str) -> None:
         """Serializes records and window reviews to a JSON file."""
         logger.info("Saving database store to %s", path)
+        output_path = Path(path)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
         data = {
             "records": [asdict(r) for r in self.records],
             "window_reviews": [asdict(w) for w in self.window_reviews]
         }
         
-        with open(path, "w", encoding="utf-8") as f:
+        with output_path.open("w", encoding="utf-8") as f:
             json.dump(data, f, indent=2)
         logger.info("Store saved successfully.")
 
