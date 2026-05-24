@@ -136,7 +136,7 @@ def validate_pipeline(path, catalog):
 def validate_supporting_files():
     required = [
         ROOT / "env.example",
-        ROOT / "video-data" / "clip-summaries" / "clip_014_bad_pass_turnover.txt",
+        ROOT / "video-data" / "clip-summaries" / "clip_000_005_positional_patience.txt",
         ROOT / "video-data" / "sample-uploads" / "possession_and_rest_defense_tactics.txt",
     ]
     ok = True

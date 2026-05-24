@@ -15,11 +15,11 @@ Both indexing and chat search use `embedding_transformer` with the `miniLM` prof
 1. Configure RocketRide in the VS Code extension so it can populate `ROCKETRIDE_URI` and `ROCKETRIDE_APIKEY`.
 2. Create a local `.env` from `env.example` and set `ROCKETRIDE_GMI_CLOUD_APIKEY`.
 3. Make sure Chroma is available at `localhost:8330`, or change the `chroma` nodes in all three pipeline files to your Chroma host.
-4. Run `clip_index.pipe` once to index the sample clip summaries.
+4. Run `clip_index.pipe` once to index the real clip summaries.
 5. Run `tactics_upload.pipe` and upload `video-data/sample-uploads/possession_and_rest_defense_tactics.txt` through the Dropper UI.
-6. Run `.github/demo.pipe` and ask the Coach Chat node: `I want to see clips where we lost possession from a bad pass`.
+6. Run `.github/demo.pipe` and ask the Coach Chat node: `I want to see clips where we failed to trigger the 6-second press`.
 
-Expected behavior: the orchestrator should retrieve `clip_014_bad_pass_turnover`, use the uploaded possession tactics when relevant, delegate to the specialist subagents that match the question, and answer with the clip timestamp `12:41-13:05`, skill scores, a combined score, and a concise coaching summary.
+Expected behavior: the orchestrator should retrieve clips such as `clip_020_025_turnover_press_failure` or `clip_045_050_transition_press_lapse`, use the uploaded possession tactics when relevant, delegate to the specialist subagents that match the question, and answer with the clip timestamp, skill scores, a combined score, and a concise coaching summary.
 
 ## Validate The Wiring
 

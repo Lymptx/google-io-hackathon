@@ -1,0 +1,17 @@
+Clip ID: clip_045_050_transition_press_lapse
+Match Phase: Final-third possession followed by a middle-third transition.
+Timestamp: 45.0s-50.0s
+Primary Theme: Major transition lapse and weak support structure.
+
+Detailed Sequence:
+At 45.0s the attacking team has possession around the penalty area while the defending team is organized in a deep, compact block. Width is present, but the sequence is more stable than penetrative.
+
+At 46.0s Liverpool in red works the ball in the attacking half against Real Madrid's set defensive block. The support structure drops to only one passing option, making the possession less secure.
+
+At 47.0s red advances through midfield against a set block while again providing only one clear support option. The pressure is delayed and the action is vulnerable to a transition if the ball is lost.
+
+At 48.0s the white team has possession in the middle third and tries to progress against red's defensive block. Red completely misses the immediate pressure response expected by the 6-second rule. At 49.0s Liverpool's defense is still recovering into structure while Real Madrid works the ball forward.
+
+The window scores 4.5/10 overall and just 2.0/10 in defending. The coaching point is that the team falls into defensive stability instead of counterpressing, and the earlier support problems at 46.0s and 47.0s make the transition harder to control.
+
+Observed Coaching Tags: transition press failure, missed 6-second rule, support lapse, deep block, attacking buildup, delayed pressure, middle-third progression, defensive recovery.
