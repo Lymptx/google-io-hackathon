@@ -1,0 +1,26 @@
+Clip ID: clip_035_040
+Match Phase: Red team build-up and midfield play.
+Timestamp: 35.0s-40.0s
+Primary Theme: The failure to apply high-intensity pressure during the transition at t=37.0s allowed the opponent to progress the ball through the midfield unchallenged.
+
+Detailed Sequence:
+During this window, the team's overall tactical rating was 4.5/10.
+
+The defensive line is too passive out of possession; the transition from a compact structure to a high press is non-existent, violating the core pressing philosophy.
+
+At 35.0s: The white team is in possession in the midfield, looking to progress the ball against the red team's mid-block structure.
+
+At 36.0s: The white team is transitioning into a build-up phase with the ball at midfield, while the red team retreats into a mid-block defensive shape.
+
+At 37.0s: A red team player in possession is advancing the ball through the middle while the white team maintains a structured defensive block.
+
+At 38.0s: The Red team player carries the ball toward the right flank while maintaining possession in the attacking half.
+
+At 39.0s: The Red team is in possession in the attacking third, utilizing width to stretch the white defensive line.
+
+Observed Coaching Performance:
+- 6-Second Pressing Rule: The team failed to initiate an immediate press upon loss of possession, opting for delayed reactions instead of the mandated high-intensity pressure.
+- Passing Triangles & Options: The team maintained supporting options for most of the window, though dropped to a single option during a critical dribble at t=38.0s.
+- Wing Spacing & Width: The team effectively maintained width throughout the window to stretch the opponent's defensive structure.
+
+Observed Coaching Tags: ball progression, defensive transition, dribble, mid-block positioning, midfield transition, off-ball-run, possession, possession build-up, stretching play, winger run

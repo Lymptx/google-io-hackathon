@@ -1,0 +1,26 @@
+Clip ID: clip_015_020
+Match Phase: Blue team build-up and midfield play.
+Timestamp: 15.0s-20.0s
+Primary Theme: The Red team successfully regained possession at 19.0s and immediately transitioned back into a structured positional buildup.
+
+Detailed Sequence:
+During this window, the team's overall tactical rating was 8.5/10.
+
+The team shows high tactical discipline, particularly in maintaining compact defensive structures and rapid recovery of possession. The momentary drop in supporting options at 17.0s should be addressed to ensure constant passing outlets.
+
+At 15.0s: The Red team is in possession in the middle third with players distributed across the pitch, while the White team maintains a balanced defensive shape.
+
+At 16.0s: A White player dribbles the ball through the center of the midfield under pressure from Red players.
+
+At 17.0s: The white team is in possession of the ball in the middle third and is being actively challenged by a red team defender.
+
+At 18.0s: The white team is in possession in the middle third, attempting to progress while the red team maintains a balanced defensive shape.
+
+At 19.0s: The red team is in possession of the ball in the middle third, progressing forward while maintaining a balanced structure against the white team's defensive block.
+
+Observed Coaching Performance:
+- 6-Second Pressing Rule: The Red team demonstrated effective pressing intensity between 16.0s and 17.0s, successfully challenging the opponent immediately after a loss of possession.
+- Passing Triangles & Options: The team largely maintained the required two supporting options for the ball carrier, with only a minor temporary lapse at 17.0s.
+- Wing Spacing & Width: The team consistently maintained width across the entire 5-second window, effectively stretching the opponent's defensive block.
+
+Observed Coaching Tags: dribble, dribbling, off-ball-run, positional buildup, possession, press, pressing, progression

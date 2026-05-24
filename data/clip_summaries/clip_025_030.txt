@@ -1,0 +1,26 @@
+Clip ID: clip_025_030
+Match Phase: Red team build-up and midfield play.
+Timestamp: 25.0s-30.0s
+Primary Theme: At t=26.0, the failure to initiate an immediate high press allowed the opponent to transition comfortably into a settled middle-third possession.
+
+Detailed Sequence:
+During this window, the team's overall tactical rating was 6.5/10.
+
+While the in-possession positional play is disciplined and compliant with the philosophy, the defensive transition phase is passive and lacks the intensity required by the high-press game plan.
+
+At 25.0s: The ball is being played forward by a Red player in the middle third towards an advancing teammate, while the opposing team retreats.
+
+At 26.0s: A White team player in the middle third is advancing with the ball while Red team players track back to recover defensive positions.
+
+At 27.0s: The white team is circulating the ball in the middle third while the red team maintains a balanced defensive shape.
+
+At 28.0s: The red team is in possession in the middle third, building up play from the back while the white team maintains a mid-block defensive shape.
+
+At 29.0s: The Red team is in possession in their own half, preparing to build up play through the midfield.
+
+Observed Coaching Performance:
+- 6-Second Pressing Rule: The team failed to apply the immediate 6-second press upon losing possession at t=26.0, opting for a defensive recovery instead.
+- Passing Triangles & Options: The team consistently provided at least two passing options throughout the sequence, adhering well to the positional structure requirements.
+- Wing Spacing & Width: Width was consistently maintained across all frames, successfully stretching the opponent's defensive block during build-up play.
+
+Observed Coaching Tags: build-up, defensive recovery, dribble, maintaining width, off-ball-run, pass, positional structure maintenance, possession, possession build-up, possession circulation, transition

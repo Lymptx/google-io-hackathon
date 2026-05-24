@@ -1,0 +1,26 @@
+Clip ID: clip_000_005
+Match Phase: Red team build-up and midfield play.
+Timestamp: 0.0s-5.0s
+Primary Theme: The team demonstrated high-level tactical patience at t=1.0 by utilizing wide channels to stretch the defensive block while maintaining compact internal triangles.
+
+Detailed Sequence:
+During this window, the team's overall tactical rating was 8.5/10.
+
+The team is adhering strictly to the positional play philosophy, prioritizing structure and ball retention over risky vertical play.
+
+At 0.0s: The red team is in possession of the ball in the middle third, attempting to progress up the field while the white team maintains a defensive structure.
+
+At 1.0s: Liverpool (Red) is building play from the midfield, maintaining a wide shape to stretch the Real Madrid (White) defensive block.
+
+At 2.0s: Real Madrid (white) is in possession in the middle third, attempting to progress the ball through the midfield while Liverpool (red) holds a structured defensive shape.
+
+At 3.0s: Liverpool players are in possession of the ball in the midfield area, transitioning play while building up against the Real Madrid defensive shape.
+
+At 4.0s: The teams are positioned in the middle third during a calm phase of play with no immediate pressure on the player in possession.
+
+Observed Coaching Performance:
+- 6-Second Pressing Rule: The team maintained a disciplined defensive shape throughout, though there were no immediate turnovers in the opponent's half to test the 6-second press.
+- Passing Triangles & Options: The ball carrier consistently maintained at least two passing options, demonstrating excellent positional awareness and support structures.
+- Wing Spacing & Width: Width was successfully maintained across the entire 5-second window, effectively stretching the opponent's defensive block.
+
+Observed Coaching Tags: build-up, maintaining width, midfield transition, off-ball-run, positional buildup, possession, possession build-up, possession in midfield, possession maintenance, structured buildup, winger run

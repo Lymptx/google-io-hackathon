@@ -1,0 +1,26 @@
+Clip ID: clip_030_035
+Match Phase: Red team build-up and midfield play.
+Timestamp: 30.0s-35.0s
+Primary Theme: The Red team successfully utilized wide positioning and consistent supporting structures to maintain possession and progress the ball through the midfield despite defensive pressure.
+
+Detailed Sequence:
+During this window, the team's overall tactical rating was 7.5/10.
+
+While the in-possession positional play is excellent and adheres strictly to the Guardiola-influenced structure, the transition to defense remains too passive; the coaching staff needs to enforce the '6-second rule' more aggressively to regain possession quickly.
+
+At 30.0s: The Red team player carries the ball in the center circle while the team maintains wide positioning to facilitate build-up play.
+
+At 31.0s: A Liverpool player has possession of the ball in the center circle and looks to progress play against a settled Real Madrid defensive block.
+
+At 32.0s: The white team is in possession in the midfield, progressing the ball forward while the red team maintains a defensive structure to block passing lanes.
+
+At 33.0s: The red team is in possession in the midfield, moving the ball forward while maintaining structural width.
+
+At 34.0s: A Liverpool player in possession carries the ball through the midfield against a Real Madrid defensive block.
+
+Observed Coaching Performance:
+- 6-Second Pressing Rule: The team failed to demonstrate immediate high-intensity pressing upon the turnover at 32.0s, favoring a delayed structure instead of the required aggressive trap.
+- Passing Triangles & Options: The team consistently maintained at least two supporting passing options for the ball carrier, adhering well to the positional play guidelines.
+- Wing Spacing & Width: Width was consistently maintained across the window, effectively stretching the opponent's defensive block to create space in the central channels.
+
+Observed Coaching Tags: ball progression, build-up, dribble, maintaining width, off-ball-run, positional play, possession, possession maintenance, winger positioning

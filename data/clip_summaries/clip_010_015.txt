@@ -1,0 +1,26 @@
+Clip ID: clip_010_015
+Match Phase: Blue team build-up and midfield play.
+Timestamp: 10.0s-15.0s
+Primary Theme: The transition at 13.0s highlighted a failure in the high-press, as the White team failed to capitalize on the Red team's build-up from the back.
+
+Detailed Sequence:
+During this window, the team's overall tactical rating was 6.5/10.
+
+While the team is excellent at maintaining positional structure and passing triangles in possession, the defensive off-the-ball work lacks the required intensity to match the high-pressing philosophy.
+
+At 10.0s: The white team is in possession in the middle third, maintaining a balanced structure against the red team's defensive formation.
+
+At 11.0s: The white team is in possession in the middle of the pitch, looking to progress while the red team maintains a disciplined defensive shape.
+
+At 12.0s: The ball is in transition in the middle third with the white team circulating possession while the red team maintains a balanced defensive shape.
+
+At 13.0s: The Red team is in possession in their own half, building up play from the back against a high-pressing White team.
+
+At 14.0s: A Liverpool player in the left-midfield area is in possession of the ball, looking to progress play against a spread Real Madrid defensive block.
+
+Observed Coaching Performance:
+- 6-Second Pressing Rule: The team failed to demonstrate the high-intensity pressing required during the Red team's buildup, showing a lack of urgency to win the ball back immediately.
+- Passing Triangles & Options: The team consistently maintained the required two supporting passing options for the ball carrier throughout the possession phase.
+- Wing Spacing & Width: The team successfully maintained consistent width on the flanks, effectively stretching the opponent's defensive structure during build-up play.
+
+Observed Coaching Tags: build-up, dribble, midfield transition, off-ball-run, positional buildup, possession, possession circulation
