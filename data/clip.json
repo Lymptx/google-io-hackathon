@@ -2,11 +2,11 @@
   "records": [
     {
       "t": 0.0,
-      "summary": "The red team is in possession of the ball in the middle third, attempting to progress up the field while the white team maintains a defensive structure.",
-      "possession_team": "Red",
+      "summary": "Real Madrid is in possession of the ball in the middle third, attempting to progress while Liverpool maintains a organized defensive shape.",
+      "possession_team": "Blue",
       "events": [
         "possession",
-        "build-up"
+        "positional buildup"
       ],
       "action_tags": [
         "possession"
@@ -20,32 +20,11 @@
     },
     {
       "t": 1.0,
-      "summary": "Liverpool (Red) is building play from the midfield, maintaining a wide shape to stretch the Real Madrid (White) defensive block.",
-      "possession_team": "Red",
-      "events": [
-        "possession",
-        "winger run",
-        "maintaining width"
-      ],
-      "action_tags": [
-        "possession",
-        "off-ball-run"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 2.0,
-      "summary": "Real Madrid (white) is in possession in the middle third, attempting to progress the ball through the midfield while Liverpool (red) holds a structured defensive shape.",
+      "summary": "Liverpool is maintaining defensive shape in the middle third while Real Madrid moves the ball out from the back.",
       "possession_team": "Blue",
       "events": [
-        "possession in midfield",
-        "maintaining width",
-        "structured buildup"
+        "possession",
+        "defensive organization"
       ],
       "action_tags": [
         "possession"
@@ -58,18 +37,36 @@
       "sequence_note": ""
     },
     {
-      "t": 3.0,
-      "summary": "Liverpool players are in possession of the ball in the midfield area, transitioning play while building up against the Real Madrid defensive shape.",
-      "possession_team": "Red",
+      "t": 2.0,
+      "summary": "Real Madrid (white) are in possession in their own half, preparing to build up from the back.",
+      "possession_team": "Blue",
       "events": [
-        "possession build-up",
-        "midfield transition"
+        "ball possession",
+        "build-up play"
       ],
       "action_tags": [
         "possession"
       ],
       "width_maintained": true,
-      "supporting_options_count": 2,
+      "supporting_options_count": 1,
+      "defensive_structure": "loose",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 3.0,
+      "summary": "A white player in possession controls the ball near the sideline in the defensive third while being tracked by a red defender.",
+      "possession_team": "Blue",
+      "events": [
+        "possession",
+        "defensive build-up"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 1,
       "defensive_structure": "compact triangles",
       "pressing_intensity": "none",
       "turnover_third": null,
@@ -77,11 +74,11 @@
     },
     {
       "t": 4.0,
-      "summary": "The teams are positioned in the middle third during a calm phase of play with no immediate pressure on the player in possession.",
-      "possession_team": "Red",
+      "summary": "The white team is in possession in their own defensive half, looking to build up play against the red team's high-pressing block.",
+      "possession_team": "Blue",
       "events": [
-        "possession maintenance",
-        "positional buildup"
+        "possession build-up",
+        "high press"
       ],
       "action_tags": [
         "possession"
@@ -89,39 +86,39 @@
       "width_maintained": true,
       "supporting_options_count": 2,
       "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
+      "pressing_intensity": "immediate",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
       "t": 5.0,
-      "summary": "Red team is in possession in the middle third, attempting to circulate the ball while maintaining a wide shape.",
-      "possession_team": "Red",
+      "summary": "Liverpool players in red are transitioning into a settled defensive shape in the midfield third while Real Madrid in white prepares to restart play with a throw-in.",
+      "possession_team": null,
       "events": [
-        "possession",
-        "wide positioning",
-        "ball circulation"
+        "throw-in preparation",
+        "defensive organization"
       ],
       "action_tags": [
         "possession"
       ],
       "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "loose",
+      "supporting_options_count": 0,
+      "defensive_structure": "compact triangles",
       "pressing_intensity": "none",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
       "t": 6.0,
-      "summary": "The red team is in possession in their own half, attempting to build up play while the white team maintains a defensive shape.",
+      "summary": "Liverpool player in possession in the middle third, being tightly marked by a Real Madrid defender while teammates are positioned for support or runs.",
       "possession_team": "Red",
       "events": [
         "possession",
-        "build-up play"
+        "dribble"
       ],
       "action_tags": [
-        "possession"
+        "possession",
+        "dribble"
       ],
       "width_maintained": true,
       "supporting_options_count": 2,
@@ -132,117 +129,26 @@
     },
     {
       "t": 7.0,
-      "summary": "The red team is in possession in the middle third, maintaining a wide structure while looking for forward passing options.",
+      "summary": "The red team is transitioning in the middle of the pitch with the ball carrier holding possession while teammates maintain width and depth.",
       "possession_team": "Red",
       "events": [
         "possession",
-        "winger run"
+        "middle third build-up",
+        "winger wide positioning"
       ],
       "action_tags": [
-        "possession",
-        "off-ball-run"
+        "possession"
       ],
       "width_maintained": true,
       "supporting_options_count": 2,
       "defensive_structure": "loose",
-      "pressing_intensity": "none",
+      "pressing_intensity": "delayed",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
       "t": 8.0,
-      "summary": "The Red team is in possession at the halfway line, building play through the center while maintaining a spread formation.",
-      "possession_team": "Red",
-      "events": [
-        "possession",
-        "dribble"
-      ],
-      "action_tags": [
-        "possession",
-        "dribble"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "loose",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 9.0,
-      "summary": "The red team is in possession of the ball in the midfield area, transitioning slowly while maintaining a balanced structure.",
-      "possession_team": "Red",
-      "events": [
-        "possession",
-        "slow buildup"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "loose",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 10.0,
-      "summary": "The white team is in possession in the middle third, maintaining a balanced structure against the red team's defensive formation.",
-      "possession_team": "Blue",
-      "events": [
-        "possession",
-        "positional buildup"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "loose",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 11.0,
-      "summary": "The white team is in possession in the middle of the pitch, looking to progress while the red team maintains a disciplined defensive shape.",
-      "possession_team": "Blue",
-      "events": [
-        "possession",
-        "midfield transition"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 12.0,
-      "summary": "The ball is in transition in the middle third with the white team circulating possession while the red team maintains a balanced defensive shape.",
-      "possession_team": "Blue",
-      "events": [
-        "possession circulation",
-        "positional buildup"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 13.0,
-      "summary": "The Red team is in possession in their own half, building up play from the back against a high-pressing White team.",
+      "summary": "Liverpool (Red) is in possession in their own half with defensive players looking to build from the back while Real Madrid (White) maintains a mid-block.",
       "possession_team": "Red",
       "events": [
         "possession",
@@ -253,39 +159,129 @@
       ],
       "width_maintained": true,
       "supporting_options_count": 2,
-      "defensive_structure": "stretched",
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 9.0,
+      "summary": "The Red team is in possession in the middle third, attempting to progress forward against a balanced white defensive shape.",
+      "possession_team": "Red",
+      "events": [
+        "possession",
+        "positional buildup"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "delayed",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 10.0,
+      "summary": "The white team is in possession in the middle third, dribbling forward against a retreating red defensive block.",
+      "possession_team": "Blue",
+      "events": [
+        "dribble",
+        "possession"
+      ],
+      "action_tags": [
+        "dribble",
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 1,
+      "defensive_structure": "loose",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 11.0,
+      "summary": "The ball carrier for the white team is navigating the midfield under pressure from red defenders while maintaining a balanced structural shape.",
+      "possession_team": "Blue",
+      "events": [
+        "dribbling",
+        "pressing"
+      ],
+      "action_tags": [
+        "possession",
+        "dribble",
+        "press"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "immediate",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 12.0,
+      "summary": "The ball is traveling through the middle third with the white team in possession as they look to build an attack against the red team.",
+      "possession_team": "Blue",
+      "events": [
+        "ball progression",
+        "positional buildup"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 1,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 13.0,
+      "summary": "The Red team is in possession in their own defensive half, looking to transition forward against a organized White block.",
+      "possession_team": "Red",
+      "events": [
+        "possession",
+        "building from the back"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
       "pressing_intensity": "none",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
       "t": 14.0,
-      "summary": "A Liverpool player in the left-midfield area is in possession of the ball, looking to progress play against a spread Real Madrid defensive block.",
-      "possession_team": "Red",
+      "summary": "The white team is in possession in their defensive half, building up play against a passive red block.",
+      "possession_team": "Blue",
       "events": [
         "possession",
-        "dribble",
-        "off-ball-run"
+        "build-up"
       ],
       "action_tags": [
-        "possession",
-        "dribble",
-        "off-ball-run"
+        "possession"
       ],
       "width_maintained": true,
       "supporting_options_count": 2,
-      "defensive_structure": "stretched",
+      "defensive_structure": "loose",
       "pressing_intensity": "none",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
       "t": 15.0,
-      "summary": "The Red team is in possession in the middle third with players distributed across the pitch, while the White team maintains a balanced defensive shape.",
+      "summary": "Liverpool (Red) are building possession from the middle third while Real Madrid (White) hold a structured defensive block.",
       "possession_team": "Red",
       "events": [
         "possession",
-        "positional buildup"
+        "middle third buildup"
       ],
       "action_tags": [
         "possession"
@@ -299,55 +295,52 @@
     },
     {
       "t": 16.0,
-      "summary": "A White player dribbles the ball through the center of the midfield under pressure from Red players.",
+      "summary": "The white team is in possession of the ball in the midfield area, transitioning forward against a structured red defensive block.",
       "possession_team": "Blue",
       "events": [
-        "dribble",
-        "pressing"
+        "possession",
+        "transition"
       ],
       "action_tags": [
-        "dribble",
-        "possession",
-        "press"
+        "possession"
       ],
       "width_maintained": true,
-      "supporting_options_count": 0,
+      "supporting_options_count": 2,
       "defensive_structure": "compact triangles",
-      "pressing_intensity": "immediate",
+      "pressing_intensity": "none",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
       "t": 17.0,
-      "summary": "The white team is in possession of the ball in the middle third and is being actively challenged by a red team defender.",
+      "summary": "A long pass is sent forward into open space, chasing down a ball with Real Madrid in possession in the middle third.",
       "possession_team": "Blue",
       "events": [
-        "dribbling",
-        "pressing"
+        "long pass",
+        "transition"
       ],
       "action_tags": [
-        "dribble",
-        "press",
+        "pass",
         "possession"
       ],
       "width_maintained": true,
-      "supporting_options_count": 1,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "immediate",
+      "supporting_options_count": 0,
+      "defensive_structure": "stretched",
+      "pressing_intensity": "none",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
       "t": 18.0,
-      "summary": "The white team is in possession in the middle third, attempting to progress while the red team maintains a balanced defensive shape.",
+      "summary": "A player in a white kit is driving forward with the ball in the midfield while the red team maintains a defensive shape.",
       "possession_team": "Blue",
       "events": [
-        "possession",
-        "off-ball-run"
+        "dribble",
+        "possession"
       ],
       "action_tags": [
-        "possession",
-        "off-ball-run"
+        "dribble",
+        "possession"
       ],
       "width_maintained": true,
       "supporting_options_count": 2,
@@ -358,11 +351,87 @@
     },
     {
       "t": 19.0,
-      "summary": "The red team is in possession of the ball in the middle third, progressing forward while maintaining a balanced structure against the white team's defensive block.",
+      "summary": "The Red team is transitioning from a defensive position, maintaining a structured shape while the Blue team recovers into their defensive block in the middle third.",
+      "possession_team": null,
+      "events": [
+        "transition",
+        "defensive recovery",
+        "positional restructuring"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 0,
+      "defensive_structure": "loose",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 20.0,
+      "summary": "The team in red is building an attack in the middle third while the white team maintains a defensive shape.",
       "possession_team": "Red",
       "events": [
         "possession",
-        "progression"
+        "middle third transition"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "delayed",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 21.0,
+      "summary": "A White player in possession of the ball carries it forward through the midfield while Red players retreat into a defensive shape.",
+      "possession_team": "Blue",
+      "events": [
+        "dribble",
+        "possession"
+      ],
+      "action_tags": [
+        "dribble",
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 1,
+      "defensive_structure": "stretched",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 22.0,
+      "summary": "The Red team is in possession in the midfield area, transitioning forward with support players moving to offer options.",
+      "possession_team": "Red",
+      "events": [
+        "possession",
+        "midfield progression",
+        "off-ball-run"
+      ],
+      "action_tags": [
+        "possession",
+        "off-ball-run"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "stretched",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 23.0,
+      "summary": "The white team is in possession in the midfield area, transitioning play forward while the red team maintains a defensive structure.",
+      "possession_team": "Blue",
+      "events": [
+        "ball progression",
+        "maintaining possession"
       ],
       "action_tags": [
         "possession"
@@ -375,27 +444,83 @@
       "sequence_note": ""
     },
     {
-      "t": 20.0,
-      "summary": "The ball carrier in red is progressing through the midfield while being challenged by white defenders.",
+      "t": 24.0,
+      "summary": "A red player is in possession near the halfway line while being pressured by white defenders in the middle of the pitch.",
       "possession_team": "Red",
       "events": [
-        "dribble",
-        "pressing"
+        "possession",
+        "press",
+        "dribble"
       ],
       "action_tags": [
-        "dribble",
+        "possession",
         "press",
-        "possession"
+        "dribble"
       ],
       "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
+      "supporting_options_count": 1,
+      "defensive_structure": "loose",
       "pressing_intensity": "immediate",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
-      "t": 21.0,
+      "t": 25.0,
+      "summary": "A white team player is in possession near the halfway line, moving forward while the red team maintains a balanced defensive shape in the middle third.",
+      "possession_team": "Blue",
+      "events": [
+        "possession",
+        "dribble"
+      ],
+      "action_tags": [
+        "possession",
+        "dribble"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 26.0,
+      "summary": "A white jersey player is in possession of the ball in the middle third, initiating an attack while red jerseys track back.",
+      "possession_team": "Blue",
+      "events": [
+        "possession",
+        "transition"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 0,
+      "defensive_structure": "loose",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 27.0,
+      "summary": "The white team is in possession in the middle third, building play while the red team maintains a disciplined defensive shape.",
+      "possession_team": "Blue",
+      "events": [
+        "possession",
+        "positional buildup"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "delayed",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 28.0,
       "summary": "",
       "possession_team": null,
       "events": [],
@@ -408,145 +533,13 @@
       "sequence_note": ""
     },
     {
-      "t": 22.0,
-      "summary": "The white team is in possession in the middle third, progressing the ball forward while the red team maintains a disciplined defensive block.",
-      "possession_team": "Blue",
-      "events": [
-        "possession",
-        "progression",
-        "maintaining structure"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 23.0,
-      "summary": "A long pass is being played forward towards the attacking third by the team in white.",
-      "possession_team": "Blue",
-      "events": [
-        "long pass",
-        "transition"
-      ],
-      "action_tags": [
-        "pass"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 0,
-      "defensive_structure": "loose",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 24.0,
-      "summary": "The red team is in possession in their own half, with players spread out wide, looking to transition into an attack.",
-      "possession_team": "Red",
-      "events": [
-        "possession",
-        "winger run",
-        "wide positioning"
-      ],
-      "action_tags": [
-        "possession",
-        "off-ball-run"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 25.0,
-      "summary": "The ball is being played forward by a Red player in the middle third towards an advancing teammate, while the opposing team retreats.",
-      "possession_team": "Red",
-      "events": [
-        "pass",
-        "off-ball-run"
-      ],
-      "action_tags": [
-        "pass",
-        "off-ball-run",
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "loose",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 26.0,
-      "summary": "A White team player in the middle third is advancing with the ball while Red team players track back to recover defensive positions.",
-      "possession_team": "Blue",
-      "events": [
-        "dribble",
-        "defensive recovery",
-        "transition"
-      ],
-      "action_tags": [
-        "dribble",
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "loose",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 27.0,
-      "summary": "The white team is circulating the ball in the middle third while the red team maintains a balanced defensive shape.",
-      "possession_team": "Blue",
-      "events": [
-        "possession circulation",
-        "positional structure maintenance"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 28.0,
-      "summary": "The red team is in possession in the middle third, building up play from the back while the white team maintains a mid-block defensive shape.",
-      "possession_team": "Red",
-      "events": [
-        "possession build-up",
-        "maintaining width"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
       "t": 29.0,
-      "summary": "The Red team is in possession in their own half, preparing to build up play through the midfield.",
+      "summary": "The red team is in possession in the middle third, building up play while maintaining structural width.",
       "possession_team": "Red",
       "events": [
         "possession",
-        "build-up"
+        "build-up play",
+        "maintaining width"
       ],
       "action_tags": [
         "possession"
@@ -560,298 +553,48 @@
     },
     {
       "t": 30.0,
-      "summary": "The Red team player carries the ball in the center circle while the team maintains wide positioning to facilitate build-up play.",
-      "possession_team": "Red",
+      "summary": "The white team is in possession in the middle third, progressing up the pitch while the red team maintains a structured mid-block.",
+      "possession_team": "Blue",
       "events": [
         "ball progression",
-        "maintaining width"
+        "maintaining possession",
+        "mid-block positioning"
       ],
       "action_tags": [
-        "possession",
-        "dribble"
+        "possession"
       ],
       "width_maintained": true,
       "supporting_options_count": 2,
       "defensive_structure": "compact triangles",
-      "pressing_intensity": "delayed",
+      "pressing_intensity": "none",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
       "t": 31.0,
-      "summary": "A Liverpool player has possession of the ball in the center circle and looks to progress play against a settled Real Madrid defensive block.",
-      "possession_team": "Red",
+      "summary": "A loose ball in the middle third leads to a tackle between a red player and a white player as teammates react.",
+      "possession_team": null,
       "events": [
-        "possession",
-        "build-up"
+        "tackle",
+        "turnover"
       ],
       "action_tags": [
-        "possession"
+        "tackle",
+        "turnover"
       ],
       "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
+      "supporting_options_count": 1,
+      "defensive_structure": "loose",
+      "pressing_intensity": "immediate",
+      "turnover_third": "middle",
       "sequence_note": ""
     },
     {
       "t": 32.0,
-      "summary": "The white team is in possession in the midfield, progressing the ball forward while the red team maintains a defensive structure to block passing lanes.",
+      "summary": "The white team is in possession in the midfield, looking to transition through the center against a structured red defensive block.",
       "possession_team": "Blue",
       "events": [
-        "possession",
-        "dribble",
-        "off-ball-run"
-      ],
-      "action_tags": [
-        "possession",
-        "dribble",
-        "off-ball-run"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 33.0,
-      "summary": "The red team is in possession in the midfield, moving the ball forward while maintaining structural width.",
-      "possession_team": "Red",
-      "events": [
-        "possession maintenance",
-        "positional play",
-        "winger positioning"
-      ],
-      "action_tags": [
-        "possession",
-        "off-ball-run"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 34.0,
-      "summary": "A Liverpool player in possession carries the ball through the midfield against a Real Madrid defensive block.",
-      "possession_team": "Red",
-      "events": [
-        "dribble",
-        "possession maintenance"
-      ],
-      "action_tags": [
-        "dribble",
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 35.0,
-      "summary": "The white team is in possession in the midfield, looking to progress the ball against the red team's mid-block structure.",
-      "possession_team": "Blue",
-      "events": [
-        "possession",
-        "midfield transition"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 36.0,
-      "summary": "The white team is transitioning into a build-up phase with the ball at midfield, while the red team retreats into a mid-block defensive shape.",
-      "possession_team": "Blue",
-      "events": [
-        "possession build-up",
-        "mid-block positioning",
-        "defensive transition"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 37.0,
-      "summary": "A red team player in possession is advancing the ball through the middle while the white team maintains a structured defensive block.",
-      "possession_team": "Red",
-      "events": [
-        "possession",
-        "ball progression"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 38.0,
-      "summary": "The Red team player carries the ball toward the right flank while maintaining possession in the attacking half.",
-      "possession_team": "Red",
-      "events": [
-        "dribble",
-        "possession"
-      ],
-      "action_tags": [
-        "dribble",
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 1,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 39.0,
-      "summary": "The Red team is in possession in the attacking third, utilizing width to stretch the white defensive line.",
-      "possession_team": "Red",
-      "events": [
-        "possession",
-        "winger run",
-        "stretching play"
-      ],
-      "action_tags": [
-        "possession",
-        "off-ball-run"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "stretched",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 40.0,
-      "summary": "The white team is in possession in the attacking third, working the ball toward the edge of the penalty area while the red team maintains a compact defensive block.",
-      "possession_team": "Blue",
-      "events": [
-        "possession",
-        "attacking progression"
-      ],
-      "action_tags": [
-        "possession",
-        "pass"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "delayed",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 41.0,
-      "summary": "The red team is maintaining possession in the midfield as the white team maintains a compact defensive block near their penalty area.",
-      "possession_team": "Red",
-      "events": [
-        "possession",
-        "positional buildup"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 42.0,
-      "summary": "A Liverpool player in white is attempting to dribble past a Red defender near the edge of the penalty area while teammates position themselves for a potential cross or shot.",
-      "possession_team": "Blue",
-      "events": [
-        "dribble",
-        "attacking phase",
-        "positioning"
-      ],
-      "action_tags": [
-        "dribble",
-        "possession",
-        "off-ball-run"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "immediate",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 43.0,
-      "summary": "The Red team is attacking in the final third with a cross coming into the penalty area, while the White team defends deep.",
-      "possession_team": "Red",
-      "events": [
-        "cross",
-        "off-ball-run",
-        "attacking positioning"
-      ],
-      "action_tags": [
-        "possession",
-        "off-ball-run"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 44.0,
-      "summary": "The white team is in possession inside the attacking third, working the ball against a structured red defensive block.",
-      "possession_team": "Blue",
-      "events": [
-        "possession",
-        "attacking third buildup"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 45.0,
-      "summary": "The defending team is organized in a deep, compact block inside their own penalty area while the attacking team maintains possession around the box.",
-      "possession_team": "Red",
-      "events": [
-        "possession",
-        "defensive block",
+        "midfield transition",
         "positional play"
       ],
       "action_tags": [
@@ -865,83 +608,65 @@
       "sequence_note": ""
     },
     {
-      "t": 46.0,
-      "summary": "The team in red (Liverpool) is in possession and maneuvering the ball in the attacking half against a set defensive block from Real Madrid.",
+      "t": 33.0,
+      "summary": "The ball is in the middle third with the red team maintaining a high defensive line and attempting to transition forward through the center.",
       "possession_team": "Red",
       "events": [
         "possession",
-        "attacking buildup"
+        "transition"
       ],
       "action_tags": [
         "possession"
       ],
       "width_maintained": true,
-      "supporting_options_count": 1,
+      "supporting_options_count": 2,
       "defensive_structure": "compact triangles",
       "pressing_intensity": "none",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
-      "t": 47.0,
-      "summary": "The Red team in possession is advancing the ball through the midfield against a set defensive block.",
+      "t": 34.0,
+      "summary": "The red team is transitioning forward through the midfield with the ball carrier supported by teammates in open space.",
       "possession_team": "Red",
       "events": [
         "possession",
-        "dribble",
+        "transitioning forward",
+        "width exploitation"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "loose",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 35.0,
+      "summary": "Liverpool players in red are progressing the ball through the midfield in a controlled build-up phase against a retreating Real Madrid defensive shape.",
+      "possession_team": "Red",
+      "events": [
+        "possession",
+        "build-up",
         "off-ball-run"
       ],
       "action_tags": [
         "possession",
-        "dribble",
         "off-ball-run"
       ],
       "width_maintained": true,
-      "supporting_options_count": 1,
+      "supporting_options_count": 2,
       "defensive_structure": "compact triangles",
       "pressing_intensity": "delayed",
       "turnover_third": null,
       "sequence_note": ""
     },
     {
-      "t": 48.0,
-      "summary": "The white team is in possession in the middle third, attempting to progress the ball against the red team's defensive block.",
-      "possession_team": "Blue",
-      "events": [
-        "possession",
-        "build-up play"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 49.0,
-      "summary": "Liverpool's defense is transitioning back into a structured shape as Real Madrid works the ball forward in the middle third.",
-      "possession_team": "Blue",
-      "events": [
-        "possession maintenance",
-        "positional buildup"
-      ],
-      "action_tags": [
-        "possession"
-      ],
-      "width_maintained": true,
-      "supporting_options_count": 2,
-      "defensive_structure": "compact triangles",
-      "pressing_intensity": "none",
-      "turnover_third": null,
-      "sequence_note": ""
-    },
-    {
-      "t": 50.0,
-      "summary": "The white team is in possession in their own defensive third, looking to build out from the back while the red team maintains a disciplined mid-block shape.",
+      "t": 36.0,
+      "summary": "The white team is in possession in their own defensive third, initiating a build-up play against the red team's structured defensive block.",
       "possession_team": "Blue",
       "events": [
         "possession build-up",
@@ -958,8 +683,83 @@
       "sequence_note": ""
     },
     {
-      "t": 51.0,
-      "summary": "Liverpool (Red) is building play from deep with central defenders while the Real Madrid (White) team is sitting in a mid-to-low block.",
+      "t": 37.0,
+      "summary": "The white team is in possession in their defensive half, moving the ball forward with players positioned to stretch the pitch while the red team maintains a balanced defensive shape.",
+      "possession_team": "Blue",
+      "events": [
+        "possession maintenance",
+        "stretching the field"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 38.0,
+      "summary": "The white team is in possession in their defensive half, building up play against a high-pressing red team.",
+      "possession_team": "Blue",
+      "events": [
+        "possession",
+        "build-up"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 1,
+      "defensive_structure": "loose",
+      "pressing_intensity": "immediate",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 39.0,
+      "summary": "The white team is circulating the ball in their defensive third while the red team maintains a high-pressing structure.",
+      "possession_team": "Blue",
+      "events": [
+        "ball circulation",
+        "high press",
+        "defensive organization"
+      ],
+      "action_tags": [
+        "possession",
+        "press"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "immediate",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 40.0,
+      "summary": "The white team is launching a long ball from deep inside their own half toward the attacking third while the red team recovers defensive positions.",
+      "possession_team": "Blue",
+      "events": [
+        "long ball",
+        "defensive transition"
+      ],
+      "action_tags": [
+        "pass",
+        "possession"
+      ],
+      "width_maintained": false,
+      "supporting_options_count": 0,
+      "defensive_structure": "stretched",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 41.0,
+      "summary": "Liverpool (Red) is building an attack from their defensive third while Real Madrid (White) maintains a mid-block defensive shape.",
       "possession_team": "Red",
       "events": [
         "possession",
@@ -976,12 +776,49 @@
       "sequence_note": ""
     },
     {
-      "t": 52.0,
-      "summary": "Liverpool players in red are maintaining a defensive structure while Real Madrid players in white are transitioning across the middle third.",
+      "t": 42.0,
+      "summary": "The goalkeeper is in possession of the ball within the penalty area, looking to distribute play forward as teammates position themselves.",
+      "possession_team": "Red",
+      "events": [
+        "goalkeeper distribution",
+        "positional buildup"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "loose",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 43.0,
+      "summary": "Liverpool players in red are maintaining a high defensive line while in possession of the ball in the middle third.",
+      "possession_team": "Red",
+      "events": [
+        "possession",
+        "high defensive line positioning"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 44.0,
+      "summary": "The white team is in possession deep in the attacking third, working the ball toward the edge of the box against a retreating red defensive block.",
       "possession_team": "Blue",
       "events": [
-        "transition",
-        "off-ball-run"
+        "possession",
+        "attacking third buildup",
+        "off-ball movement"
       ],
       "action_tags": [
         "possession",
@@ -993,162 +830,417 @@
       "pressing_intensity": "none",
       "turnover_third": null,
       "sequence_note": ""
+    },
+    {
+      "t": 45.0,
+      "summary": "The white team is in possession of the ball in the attacking half, while the red team maintains a disciplined defensive block.",
+      "possession_team": "Blue",
+      "events": [
+        "possession",
+        "positional play"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 46.0,
+      "summary": "Liverpool players are in possession building an attack from the right flank while Real Madrid maintains a compact defensive block.",
+      "possession_team": "Red",
+      "events": [
+        "possession",
+        "winger run",
+        "positional play"
+      ],
+      "action_tags": [
+        "possession",
+        "off-ball-run"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 47.0,
+      "summary": "Liverpool players in red are transitioning into a defensive block following a ball loss in the attacking third, while Real Madrid players in white are organized in a low defensive shape.",
+      "possession_team": null,
+      "events": [
+        "turnover",
+        "defensive transition",
+        "rest defense"
+      ],
+      "action_tags": [
+        "turnover",
+        "possession"
+      ],
+      "width_maintained": false,
+      "supporting_options_count": 0,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": "attacking",
+      "sequence_note": ""
+    },
+    {
+      "t": 48.0,
+      "summary": "The team in white is in possession, advancing the ball down the wing while maintaining width against a retreating defensive block.",
+      "possession_team": "Blue",
+      "events": [
+        "possession",
+        "winger run",
+        "maintaining width"
+      ],
+      "action_tags": [
+        "possession",
+        "off-ball-run"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 49.0,
+      "summary": "Liverpool players in red are maintaining possession in the middle third with a structured buildup, while Real Madrid players in white are settling into a compact defensive block.",
+      "possession_team": "Red",
+      "events": [
+        "possession maintenance",
+        "positional buildup",
+        "defensive organization"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 50.0,
+      "summary": "Liverpool players in red are mounting a slow attacking transition in the attacking third while Real Madrid defenders recover their positions.",
+      "possession_team": "Red",
+      "events": [
+        "possession in attacking third",
+        "positional buildup"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "delayed",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 51.0,
+      "summary": "Liverpool player in red maintains possession near the sideline while Real Madrid players in white organize their defensive block.",
+      "possession_team": "Red",
+      "events": [
+        "possession",
+        "wide positioning"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 52.0,
+      "summary": "The ball carrier is advancing centrally with open space, supported by teammates as the defensive block drops into a mid-block.",
+      "possession_team": "Red",
+      "events": [
+        "possession maintenance",
+        "central progression"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 53.0,
+      "summary": "The ball is rolling through the middle of the pitch towards the Red team's half after a clear turnover in possession.",
+      "possession_team": null,
+      "events": [
+        "turnover",
+        "ball rolling in open space"
+      ],
+      "action_tags": [
+        "turnover"
+      ],
+      "width_maintained": false,
+      "supporting_options_count": 0,
+      "defensive_structure": "loose",
+      "pressing_intensity": "none",
+      "turnover_third": "middle",
+      "sequence_note": ""
+    },
+    {
+      "t": 54.0,
+      "summary": "Liverpool players in red are setting up a positional play structure in the attacking third while Real Madrid in white defend in a compact block.",
+      "possession_team": "Red",
+      "events": [
+        "possession",
+        "positional buildup"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 55.0,
+      "summary": "The white team is in possession of the ball in their defensive half, building up play against a settled red defensive block.",
+      "possession_team": "Blue",
+      "events": [
+        "possession",
+        "build up play"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 56.0,
+      "summary": "The goalkeeper is in possession of the ball in the defensive third, looking to initiate play from the back.",
+      "possession_team": "Red",
+      "events": [
+        "goalkeeper in possession",
+        "building from the back"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 2,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
+    },
+    {
+      "t": 57.0,
+      "summary": "Liverpool players in white are transitioning into a defensive structure while Real Madrid players in red hold a deep, compact shape following a dead-ball reset.",
+      "possession_team": null,
+      "events": [
+        "dead ball situation",
+        "defensive organization"
+      ],
+      "action_tags": [
+        "possession"
+      ],
+      "width_maintained": true,
+      "supporting_options_count": 0,
+      "defensive_structure": "compact triangles",
+      "pressing_intensity": "none",
+      "turnover_third": null,
+      "sequence_note": ""
     }
   ],
   "window_reviews": [
     {
       "t_start": 0.0,
       "t_end": 5.0,
-      "overall_score": 8.5,
-      "passing_score": 9.0,
-      "dribbling_score": 7.0,
-      "possession_score": 9.5,
-      "defending_score": 8.0,
-      "conformance_6_second_rule": "The team maintained a disciplined defensive shape throughout, though there were no immediate turnovers in the opponent's half to test the 6-second press.",
-      "conformance_supporting_triangles": "The ball carrier consistently maintained at least two passing options, demonstrating excellent positional awareness and support structures.",
-      "wing_width_analysis": "Width was successfully maintained across the entire 5-second window, effectively stretching the opponent's defensive block.",
-      "highlight": "The team demonstrated high-level tactical patience at t=1.0 by utilizing wide channels to stretch the defensive block while maintaining compact internal triangles.",
-      "notes": "The team is adhering strictly to the positional play philosophy, prioritizing structure and ball retention over risky vertical play."
-    },
-    {
-      "t_start": 5.0,
-      "t_end": 10.0,
       "overall_score": 7.5,
       "passing_score": 8.0,
       "dribbling_score": 7.0,
       "possession_score": 8.5,
-      "defending_score": 6.0,
-      "conformance_6_second_rule": "The red team maintained possession throughout this window, meaning the 6-second rule was not triggered.",
-      "conformance_supporting_triangles": "The team successfully maintained the required two supporting passing options for the ball carrier throughout the entire 5-second interval.",
-      "wing_width_analysis": "The red team consistently maintained wide positioning, effectively stretching the opponent's defensive structure as per the tactical plan.",
-      "highlight": "The consistent maintenance of wide width and triangular support structures during the midfield build-up at 7.0s facilitated safe ball progression.",
-      "notes": "The team demonstrates good positional discipline in possession, but the defensive structure remained 'loose' instead of compact, which could be exploited during transitions."
+      "defending_score": 7.0,
+      "conformance_6_second_rule": "The team demonstrated effective pressing intensity by t=4.0, correctly applying pressure in response to the opponent's defensive block.",
+      "conformance_supporting_triangles": "The team maintained necessary supporting structures for the majority of the period, though it momentarily dipped to a single option between t=2.0 and t=3.0.",
+      "wing_width_analysis": "Width was consistently maintained throughout the five-second window, effectively stretching the defensive block as per the tactical philosophy.",
+      "highlight": "The transition to immediate pressing intensity at t=4.0 while building up from the defensive third represents a proactive adherence to the high-pressing tactical mandate.",
+      "notes": "The team successfully maintained positional discipline during buildup, although the temporary breakdown in supporting options in the defensive third suggests a need for better off-the-ball movement to ensure constant passing outlets."
+    },
+    {
+      "t_start": 5.0,
+      "t_end": 10.0,
+      "overall_score": 8.5,
+      "passing_score": 8.0,
+      "dribbling_score": 7.0,
+      "possession_score": 9.0,
+      "defending_score": 8.0,
+      "conformance_6_second_rule": "The team was consistently in possession during this window, meaning the 6-second rule was not triggered as no turnovers occurred.",
+      "conformance_supporting_triangles": "The team strictly adhered to the guideline by maintaining two supporting passing options for the ball carrier throughout the progression phase.",
+      "wing_width_analysis": "Width was consistently maintained across all frames, effectively stretching the opponent's defensive block during middle-third build-up.",
+      "highlight": "The team's methodical middle-third buildup at t=7.0 successfully utilized width and depth to probe the opponent's mid-block.",
+      "notes": "Liverpool demonstrated high tactical discipline in their positional structure, focusing on controlled buildup and preventing isolated players by keeping consistent supporting triangles."
     },
     {
       "t_start": 10.0,
       "t_end": 15.0,
       "overall_score": 6.5,
-      "passing_score": 7.0,
-      "dribbling_score": 6.0,
-      "possession_score": 7.5,
-      "defending_score": 5.0,
-      "conformance_6_second_rule": "The team failed to demonstrate the high-intensity pressing required during the Red team's buildup, showing a lack of urgency to win the ball back immediately.",
-      "conformance_supporting_triangles": "The team consistently maintained the required two supporting passing options for the ball carrier throughout the possession phase.",
-      "wing_width_analysis": "The team successfully maintained consistent width on the flanks, effectively stretching the opponent's defensive structure during build-up play.",
-      "highlight": "The transition at 13.0s highlighted a failure in the high-press, as the White team failed to capitalize on the Red team's build-up from the back.",
-      "notes": "While the team is excellent at maintaining positional structure and passing triangles in possession, the defensive off-the-ball work lacks the required intensity to match the high-pressing philosophy."
-    },
-    {
-      "t_start": 15.0,
-      "t_end": 20.0,
-      "overall_score": 8.5,
-      "passing_score": 9.0,
-      "dribbling_score": 8.0,
-      "possession_score": 9.0,
-      "defending_score": 8.5,
-      "conformance_6_second_rule": "The Red team demonstrated effective pressing intensity between 16.0s and 17.0s, successfully challenging the opponent immediately after a loss of possession.",
-      "conformance_supporting_triangles": "The team largely maintained the required two supporting options for the ball carrier, with only a minor temporary lapse at 17.0s.",
-      "wing_width_analysis": "The team consistently maintained width across the entire 5-second window, effectively stretching the opponent's defensive block.",
-      "highlight": "The Red team successfully regained possession at 19.0s and immediately transitioned back into a structured positional buildup.",
-      "notes": "The team shows high tactical discipline, particularly in maintaining compact defensive structures and rapid recovery of possession. The momentary drop in supporting options at 17.0s should be addressed to ensure constant passing outlets."
-    },
-    {
-      "t_start": 20.0,
-      "t_end": 25.0,
-      "overall_score": 6.5,
       "passing_score": 6.0,
       "dribbling_score": 7.0,
       "possession_score": 7.5,
       "defending_score": 5.0,
-      "conformance_6_second_rule": "The team failed to demonstrate the high-intensity pressing required by the 6-second rule following the turnover at t=21.0.",
-      "conformance_supporting_triangles": "The team generally maintained effective support structures in possession, consistently providing the ball carrier with at least two passing options.",
-      "wing_width_analysis": "Width was consistently maintained throughout the possession phases, successfully stretching the opponent's defensive block.",
-      "highlight": "The Red team successfully utilized wide positioning at t=24.0 to initiate a structured transition into the attacking third.",
-      "notes": "While in-possession structure and width are meeting tactical goals, the team displayed a lack of urgency in defensive transitions, specifically failing to trigger the immediate high press after losing possession."
+      "conformance_6_second_rule": "The team failed to demonstrate an immediate high press or effective defensive transition when possession was lost at t=13.0.",
+      "conformance_supporting_triangles": "The team inconsistently maintained the required two supporting passing options, dropping to only one option at 10.0s and 12.0s.",
+      "wing_width_analysis": "Width was consistently maintained throughout the 5s window, effectively stretching the opponent's defensive structure as per the game plan.",
+      "highlight": "The most significant tactical moment occurred at 11.0s, where the team successfully executed a compact triangle structure with two supporting options while under pressure.",
+      "notes": "While width and build-up play in the middle third are generally sound, the defensive transition phase remains passive; the team must intensify pressing immediately upon losing possession to align with the high-press philosophy."
+    },
+    {
+      "t_start": 15.0,
+      "t_end": 20.0,
+      "overall_score": 4.5,
+      "passing_score": 3.0,
+      "dribbling_score": 5.0,
+      "possession_score": 4.0,
+      "defending_score": 3.5,
+      "conformance_6_second_rule": "The team failed to initiate any high-intensity press or crowding patterns upon losing possession, completely neglecting the mandated 6-second rule.",
+      "conformance_supporting_triangles": "Support structures were inconsistent, dropping to zero options during the transition phase at 17.0s and 19.0s, which violates the positional play guideline.",
+      "wing_width_analysis": "While players maintained width, the lack of short, rapid passing sequences meant the width was ineffective at creating space against the opponent's defensive block.",
+      "highlight": "The failure to press at 17.0s during the opponent's transition allowed the blue team to easily drive forward through the midfield without interference.",
+      "notes": "The team is playing too passively out of possession; there is a lack of urgency in defensive transitions and a breakdown in the required short-passing structure which allows opponents to dictate play."
+    },
+    {
+      "t_start": 20.0,
+      "t_end": 25.0,
+      "overall_score": 4.5,
+      "passing_score": 5.0,
+      "dribbling_score": 4.0,
+      "possession_score": 5.0,
+      "defending_score": 3.5,
+      "conformance_6_second_rule": "The team failed to initiate immediate high-pressing, frequently retreating into a defensive shape rather than applying the required 6-second rule upon losing possession.",
+      "conformance_supporting_triangles": "Support play was inconsistent, with the ball carrier often lacking the required two passing options to facilitate the intended triangulation style.",
+      "wing_width_analysis": "The team successfully maintained consistent width on the wings, providing a structural foundation for stretching the opponent's defensive block.",
+      "highlight": "The team showed a momentary lapse in discipline at t=24.0, where the defensive structure became loose while attempting an immediate press.",
+      "notes": "The transition play is lacking the necessary intensity in the defensive phase; players are dropping off too quickly instead of engaging in the high-press, which contradicts the core tactical philosophy."
     },
     {
       "t_start": 25.0,
       "t_end": 30.0,
-      "overall_score": 6.5,
-      "passing_score": 7.0,
-      "dribbling_score": 6.0,
-      "possession_score": 8.0,
-      "defending_score": 5.0,
-      "conformance_6_second_rule": "The team failed to apply the immediate 6-second press upon losing possession at t=26.0, opting for a defensive recovery instead.",
-      "conformance_supporting_triangles": "The team consistently provided at least two passing options throughout the sequence, adhering well to the positional structure requirements.",
-      "wing_width_analysis": "Width was consistently maintained across all frames, successfully stretching the opponent's defensive block during build-up play.",
-      "highlight": "At t=26.0, the failure to initiate an immediate high press allowed the opponent to transition comfortably into a settled middle-third possession.",
-      "notes": "While the in-possession positional play is disciplined and compliant with the philosophy, the defensive transition phase is passive and lacks the intensity required by the high-press game plan."
+      "overall_score": 5.5,
+      "passing_score": 6.0,
+      "dribbling_score": 5.0,
+      "possession_score": 6.5,
+      "defending_score": 4.0,
+      "conformance_6_second_rule": "The team failed to execute the 6-second rule effectively as there was zero intensity in pressing upon the change of possession at 28.0s.",
+      "conformance_supporting_triangles": "The team successfully maintained supporting passing options in three of the four active possession frames, though suffered a complete breakdown in structural support at 26.0s.",
+      "wing_width_analysis": "Wing width was consistently maintained during periods of possession, successfully stretching the opponent's defensive block.",
+      "highlight": "The transition at 28.0s represented a significant tactical failure due to the total absence of a reactive press or organized defensive structure following the loss of possession.",
+      "notes": "While the team shows good spatial awareness in possession by maintaining width and triangulations, their out-of-possession transition phase is currently insufficient for a high-pressing philosophy; players remain passive when the ball turns over in the middle third."
     },
     {
       "t_start": 30.0,
       "t_end": 35.0,
-      "overall_score": 7.5,
-      "passing_score": 8.0,
-      "dribbling_score": 7.0,
-      "possession_score": 8.5,
-      "defending_score": 5.0,
-      "conformance_6_second_rule": "The team failed to demonstrate immediate high-intensity pressing upon the turnover at 32.0s, favoring a delayed structure instead of the required aggressive trap.",
-      "conformance_supporting_triangles": "The team consistently maintained at least two supporting passing options for the ball carrier, adhering well to the positional play guidelines.",
-      "wing_width_analysis": "Width was consistently maintained across the window, effectively stretching the opponent's defensive block to create space in the central channels.",
-      "highlight": "The Red team successfully utilized wide positioning and consistent supporting structures to maintain possession and progress the ball through the midfield despite defensive pressure.",
-      "notes": "While the in-possession positional play is excellent and adheres strictly to the Guardiola-influenced structure, the transition to defense remains too passive; the coaching staff needs to enforce the '6-second rule' more aggressively to regain possession quickly."
+      "overall_score": 6.5,
+      "passing_score": 7.0,
+      "dribbling_score": 5.0,
+      "possession_score": 7.5,
+      "defending_score": 5.5,
+      "conformance_6_second_rule": "The team demonstrated immediate pressing intensity upon the turnover at t=31.0, successfully engaging the opponent in the middle third.",
+      "conformance_supporting_triangles": "The team largely maintained the required two supporting options, though efficiency dropped momentarily following the turnover at t=31.0.",
+      "wing_width_analysis": "The team consistently maintained width across the window, effectively stretching the opposition defensive block as instructed.",
+      "highlight": "The immediate pressing reaction following the midfield tackle at t=31.0 showed clear adherence to the tactical philosophy.",
+      "notes": "Defensive structure became loose at t=34.0, failing to maintain the compact shape required to prevent transition opportunities; better discipline is needed in non-possession phases."
     },
     {
       "t_start": 35.0,
       "t_end": 40.0,
-      "overall_score": 4.5,
-      "passing_score": 5.0,
-      "dribbling_score": 6.0,
-      "possession_score": 5.0,
-      "defending_score": 2.0,
-      "conformance_6_second_rule": "The team failed to initiate an immediate press upon loss of possession, opting for delayed reactions instead of the mandated high-intensity pressure.",
-      "conformance_supporting_triangles": "The team maintained supporting options for most of the window, though dropped to a single option during a critical dribble at t=38.0s.",
-      "wing_width_analysis": "The team effectively maintained width throughout the window to stretch the opponent's defensive structure.",
-      "highlight": "The failure to apply high-intensity pressure during the transition at t=37.0s allowed the opponent to progress the ball through the midfield unchallenged.",
-      "notes": "The defensive line is too passive out of possession; the transition from a compact structure to a high press is non-existent, violating the core pressing philosophy."
+      "overall_score": 7.5,
+      "passing_score": 8.0,
+      "dribbling_score": 0.0,
+      "possession_score": 7.0,
+      "defending_score": 8.5,
+      "conformance_6_second_rule": "The team successfully implemented an immediate high-pressing structure starting at t=38s, demonstrating intent to disrupt the opponent's build-up.",
+      "conformance_supporting_triangles": "The team largely maintained successful supporting triangles with at least two options available in 4 out of 5 frames.",
+      "wing_width_analysis": "The team consistently maintained width on the wings throughout the entire 5-second window, effectively stretching the opponent's defensive block.",
+      "highlight": "The transition from defensive organization to an immediate high press at t=38s represents the most tactically sound moment in accordance with the game plan.",
+      "notes": "The team shows excellent tactical discipline in maintaining compact defensive shapes while in possession; however, there was a minor lapse in supporting options at t=38s before recovering at t=39s."
     },
     {
       "t_start": 40.0,
       "t_end": 45.0,
       "overall_score": 6.5,
       "passing_score": 7.0,
-      "dribbling_score": 6.0,
+      "dribbling_score": 5.0,
       "possession_score": 8.0,
       "defending_score": 5.0,
-      "conformance_6_second_rule": "The team failed to demonstrate the aggressive high press required by the 6-second rule, showing inconsistency in transition intensity.",
-      "conformance_supporting_triangles": "The team maintained excellent structural discipline with at least two supporting passing options for the ball carrier throughout the possession phases.",
-      "wing_width_analysis": "Width was consistently maintained during attacking phases, effectively stretching the opponent's defensive block.",
-      "highlight": "The most significant tactical moment was the successful maintenance of passing triangles during the blue team's buildup in the attacking third, providing consistent outlets under pressure.",
-      "notes": "While the in-possession positional play is well-drilled and structured, the out-of-possession defensive intensity must increase to align with the high-press philosophy; the team was too passive when transitioning to defense."
+      "conformance_6_second_rule": "The team failed to demonstrate active pressing triggers during defensive transitions, choosing instead to retreat into a compact block.",
+      "conformance_supporting_triangles": "The team successfully maintained the mandated structure with at least two supporting options for the ball carrier throughout the build-up phases.",
+      "wing_width_analysis": "Width was consistently maintained during positional play, effectively stretching the opponent's defensive structure across the pitch.",
+      "highlight": "The Red team's controlled build-up starting from the goalkeeper and moving through the middle third successfully established a high defensive line and positional structure.",
+      "notes": "While in-possession positional play adheres well to Guardiola-style principles, the team is lacking the required intensity in defensive transitions; they prioritize recovery of shape over the immediate 6-second high-press objective."
     },
     {
       "t_start": 45.0,
       "t_end": 50.0,
-      "overall_score": 4.5,
-      "passing_score": 5.0,
-      "dribbling_score": 6.0,
-      "possession_score": 5.5,
-      "defending_score": 2.0,
-      "conformance_6_second_rule": "The team failed to apply any pressure immediately following the transition at 48.0s, completely neglecting the 6-second rule.",
-      "conformance_supporting_triangles": "Support structure was inconsistent, falling below the required minimum of two options in frames 46.0s and 47.0s.",
-      "wing_width_analysis": "The team successfully maintained tactical width throughout the window, keeping the pitch stretched despite the lack of attacking penetration.",
-      "highlight": "The transition at 48.0s revealed a significant tactical lapse as the team retreated into a block rather than engaging in the required high press.",
-      "notes": "The team is prioritizing defensive stability over the high-pressing philosophy requested; the lack of intensity during the turnover phase allowed the opponent to settle in the middle third too easily."
+      "overall_score": 6.5,
+      "passing_score": 8.0,
+      "dribbling_score": 7.0,
+      "possession_score": 8.0,
+      "defending_score": 4.0,
+      "conformance_6_second_rule": "The team failed to initiate an immediate press upon the turnover at 47.0s, neglecting the 6-second rule guidelines.",
+      "conformance_supporting_triangles": "The team consistently maintained at least two passing options during possession phases, supporting the positional play philosophy.",
+      "wing_width_analysis": "Width was consistently maintained during buildup phases, effectively stretching the opponent's defensive block as requested.",
+      "highlight": "The critical failure to apply high-intensity pressure immediately following the turnover in the attacking third at 47.0s represents a significant tactical deviation.",
+      "notes": "While the team demonstrated excellent positional structure and width during possession, the transition phase is reactive rather than proactive, specifically lacking the required aggressive counter-press."
     },
     {
       "t_start": 50.0,
       "t_end": 55.0,
       "overall_score": 6.5,
       "passing_score": 7.0,
+      "dribbling_score": 6.0,
+      "possession_score": 8.0,
+      "defending_score": 4.0,
+      "conformance_6_second_rule": "The team failed the 6-second rule entirely during the turnover at t=53.0, exhibiting loose structure and zero pressing intensity.",
+      "conformance_supporting_triangles": "The team consistently maintained the required two supporting passing options throughout the buildup phases, demonstrating good positional discipline.",
+      "wing_width_analysis": "Width was consistently maintained across the observed frames, effectively stretching the Real Madrid defensive block.",
+      "highlight": "The critical failure to transition into a high-press structure immediately following the turnover at t=53.0 marks a significant tactical lapse.",
+      "notes": "While the positional buildup and width maintenance are aligned with the Guardiola-style philosophy, the lack of an aggressive, organized counter-press upon losing possession is a major vulnerability that contradicts the core defensive guidelines."
+    },
+    {
+      "t_start": 55.0,
+      "t_end": 60.0,
+      "overall_score": 6.5,
+      "passing_score": 7.0,
       "dribbling_score": 0.0,
       "possession_score": 7.5,
       "defending_score": 5.0,
-      "conformance_6_second_rule": "The lack of pressing intensity from the defensive unit suggests a failure to apply the 6-second rule when out of possession.",
-      "conformance_supporting_triangles": "The team consistently maintained at least two supporting passing options, adhering well to the positional structure guidelines.",
-      "wing_width_analysis": "The team successfully maintained width on the wings, stretching the opponent's defensive block throughout the build-up phase.",
-      "highlight": "The transition phase at 52.0s demonstrated disciplined off-ball movement, although it lacked the required aggressive defensive pressure.",
-      "notes": "While the in-possession structure is excellent and follows the Tik-Taka blueprint, the out-of-possession phase is too passive, violating the high-pressing philosophy requested by the coach."
+      "conformance_6_second_rule": "The lack of active pressing during the transition period indicates a failure to apply the 6-second rule intensity required by the tactical philosophy.",
+      "conformance_supporting_triangles": "The team successfully maintained supporting passing options during buildup play but failed to provide structure during the dead-ball reset phase.",
+      "wing_width_analysis": "The team consistently maintained width on the wings, successfully stretching the opponent's defensive block during the buildup phase.",
+      "highlight": "The team demonstrated disciplined positional play while building from the back, maintaining width and supporting triangles despite the eventual dead-ball reset.",
+      "notes": "While the in-possession structural requirements were met, the team displayed a lack of urgency in the defensive transition, failing to engage in high-intensity pressing during the 57.0s reset window."
     }
   ]
 }

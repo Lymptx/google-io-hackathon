@@ -1,0 +1,22 @@
+Clip ID: clip_055_060
+Match Phase: Red team build-up and midfield play.
+Timestamp: 55.0s-60.0s
+Primary Theme: The team demonstrated disciplined positional play while building from the back, maintaining width and supporting triangles despite the eventual dead-ball reset.
+
+Detailed Sequence:
+During this window, the team's overall tactical rating was 6.5/10.
+
+While the in-possession structural requirements were met, the team displayed a lack of urgency in the defensive transition, failing to engage in high-intensity pressing during the 57.0s reset window.
+
+At 55.0s: The white team is in possession of the ball in their defensive half, building up play against a settled red defensive block.
+
+At 56.0s: The goalkeeper is in possession of the ball in the defensive third, looking to initiate play from the back.
+
+At 57.0s: Liverpool players in white are transitioning into a defensive structure while Real Madrid players in red hold a deep, compact shape following a dead-ball reset.
+
+Observed Coaching Performance:
+- 6-Second Pressing Rule: The lack of active pressing during the transition period indicates a failure to apply the 6-second rule intensity required by the tactical philosophy.
+- Passing Triangles & Options: The team successfully maintained supporting passing options during buildup play but failed to provide structure during the dead-ball reset phase.
+- Wing Spacing & Width: The team consistently maintained width on the wings, successfully stretching the opponent's defensive block during the buildup phase.
+
+Observed Coaching Tags: build up play, building from the back, dead ball situation, defensive organization, goalkeeper in possession, possession
