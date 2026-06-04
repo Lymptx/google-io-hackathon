@@ -1,0 +1,161 @@
+{
+  "components": [
+    {
+      "id": "filesys_clip_summaries",
+      "provider": "filesys",
+      "name": "Clip Summary Files",
+      "config": {
+        "type": "filesys",
+        "actions": {},
+        "mode": "Source",
+        "parameters": {
+          "excludeExternalDrives": true,
+          "excludeEnableGlobal": true,
+          "excludeSymlinks": true
+        },
+        "include": [
+          {
+            "path": "${ROCKETRIDE_CLIP_SUMMARY_PATH}"
+          }
+        ],
+        "exclude": []
+      },
+      "ui": {
+        "position": {
+          "x": 20,
+          "y": 220
+        },
+        "measured": {
+          "width": 170,
+          "height": 66
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      }
+    },
+    {
+      "id": "parse_clip_summaries",
+      "provider": "parse",
+      "name": "Parse Clip Summaries",
+      "config": {
+        "name": "Parse Clip Summaries"
+      },
+      "ui": {
+        "position": {
+          "x": 240,
+          "y": 220
+        },
+        "measured": {
+          "width": 170,
+          "height": 66
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "tags",
+          "from": "filesys_clip_summaries"
+        }
+      ]
+    },
+    {
+      "id": "preprocessor_clip_summaries",
+      "provider": "preprocessor_langchain",
+      "name": "Chunk Clip Summaries",
+      "config": {
+        "profile": "default",
+        "default": {
+          "mode": "strlen",
+          "splitter": "RecursiveCharacterTextSplitter",
+          "strlen": 1800
+        },
+        "name": "Chunk Clip Summaries"
+      },
+      "ui": {
+        "position": {
+          "x": 460,
+          "y": 220
+        },
+        "measured": {
+          "width": 180,
+          "height": 66
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "text",
+          "from": "parse_clip_summaries"
+        }
+      ]
+    },
+    {
+      "id": "embedding_transformer_clip_summaries",
+      "provider": "embedding_transformer",
+      "name": "Embed Clip Summaries",
+      "config": {
+        "profile": "miniLM",
+        "name": "Embed Clip Summaries"
+      },
+      "ui": {
+        "position": {
+          "x": 700,
+          "y": 220
+        },
+        "measured": {
+          "width": 180,
+          "height": 66
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "documents",
+          "from": "preprocessor_clip_summaries"
+        }
+      ]
+    },
+    {
+      "id": "chroma_clip_summaries",
+      "provider": "chroma",
+      "name": "Store Clip Summaries",
+      "config": {
+        "profile": "local",
+        "local": {
+          "host": "localhost",
+          "port": 8330,
+          "collection": "soccer_clip_summaries_demo"
+        },
+        "name": "Store Clip Summaries"
+      },
+      "ui": {
+        "position": {
+          "x": 940,
+          "y": 185
+        },
+        "measured": {
+          "width": 190,
+          "height": 135
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "documents",
+          "from": "embedding_transformer_clip_summaries"
+        }
+      ]
+    }
+  ],
+  "project_id": "0a0fa708-cf37-46b4-9ba8-b3ec2f9613f8",
+  "viewport": {
+    "x": 0,
+    "y": 0,
+    "zoom": 0.9
+  },
+  "version": 1
+}

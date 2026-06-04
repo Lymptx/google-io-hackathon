@@ -1,0 +1,17 @@
+Clip ID: clip_020_025_turnover_press_failure
+Match Phase: Midfield transition after a loose-ball turnover.
+Timestamp: 20.0s-25.0s
+Primary Theme: Missed 6-second press after the turnover.
+
+Detailed Sequence:
+At 20.0s a red ball carrier progresses through midfield while being challenged by white defenders. The pressure is immediate in that moment, and red still has enough support to keep the action connected.
+
+At 21.0s the ball state becomes unclear and possession is effectively lost or contested. This is the critical trigger point: width disappears, there are no support options, and the team does not convert the loose-ball moment into an aggressive 6-second press.
+
+At 22.0s the white team has possession in the middle third and progresses forward while red drops into a disciplined defensive block. The shape is compact, but the reaction is passive rather than ball-winning.
+
+At 23.0s white plays a long pass toward the attacking third against a loose defensive structure. At 24.0s red recovers possession in its own half and uses wide positioning to begin a transition into attack.
+
+The window scores 6.5/10 overall, with defending at 5.0/10. The coaching point is that possession structure and width are adequate when red has the ball, but the transition at 21.0s lacks the urgency needed to regain possession quickly.
+
+Observed Coaching Tags: turnover, missed 6-second press, loose ball, defensive transition, long pass, compact block, wide transition, passive reaction.

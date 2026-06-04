@@ -1,0 +1,17 @@
+Clip ID: clip_040_045_attacking_third_structure
+Match Phase: Attacking-third possession and box-entry defending.
+Timestamp: 40.0s-45.0s
+Primary Theme: Structured attacking-third circulation with inconsistent pressing intensity.
+
+Detailed Sequence:
+At 40.0s the white team has possession in the attacking third and works the ball toward the edge of the penalty area. Red stays compact defensively, but the pressure is delayed.
+
+At 41.0s red has possession again in midfield while white holds a compact block near the penalty area. The ball carrier has two supporting options and the structure remains balanced.
+
+At 42.0s a Liverpool player in white attempts to dribble past a red defender near the edge of the penalty area. This is the one moment in the window where pressure becomes immediate and the defensive action matches the trigger.
+
+At 43.0s red attacks in the final third and sends a cross into the penalty area while white defends deep. At 44.0s white has possession inside the attacking third and works against a structured red block.
+
+The window scores 6.5/10 overall, with possession at 8.0/10 and defending at 5.0/10. The coaching point is that the attacking-third support structure is reliable, but the defensive intensity appears only in isolated moments rather than as a consistent high press.
+
+Observed Coaching Tags: attacking third, compact defending, box entry, immediate pressure, cross, passing triangles, wide attack, inconsistent press.

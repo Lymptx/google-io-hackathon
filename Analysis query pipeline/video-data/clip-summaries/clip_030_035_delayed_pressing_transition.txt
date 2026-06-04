@@ -1,0 +1,17 @@
+Clip ID: clip_030_035_delayed_pressing_transition
+Match Phase: Center-circle buildup with a delayed reaction after possession changes.
+Timestamp: 30.0s-35.0s
+Primary Theme: Excellent in-possession spacing with delayed transition pressure.
+
+Detailed Sequence:
+At 30.0s a red player carries the ball through the center circle while the team holds wide positions to support buildup. The support structure is strong, but the pressure around the ball is already delayed.
+
+At 31.0s Liverpool has possession in the center circle and looks to progress against a settled Real Madrid block. Red keeps two passing options around the ball and preserves structural width.
+
+At 32.0s the white team has possession in midfield and progresses forward while red organizes to block passing lanes. The turnover moment does not produce an aggressive trap, with red favoring shape over immediate ball pressure.
+
+At 33.0s red is back in possession and moves forward through midfield while maintaining width. At 34.0s a Liverpool player carries through midfield against Real Madrid's block with two support options still available.
+
+The window scores 7.5/10 overall and 8.5/10 in possession, but defending remains at 5.0/10. The coaching point is that positional play is strong, yet the transition to defense at 32.0s needs a faster and more coordinated press.
+
+Observed Coaching Tags: center-circle buildup, delayed press, possession structure, wing width, passing support, blocked lanes, transition pressure, midfield carry.

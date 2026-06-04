@@ -1,0 +1,152 @@
+{
+  "components": [
+    {
+      "id": "dropper_tactics",
+      "provider": "dropper",
+      "name": "Coaching Tactics Dropper",
+      "config": {
+        "hideForm": true,
+        "mode": "Source",
+        "parameters": {},
+        "type": "dropper",
+        "name": "Coaching Tactics Dropper"
+      },
+      "ui": {
+        "position": {
+          "x": 20,
+          "y": 220
+        },
+        "measured": {
+          "width": 190,
+          "height": 66
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      }
+    },
+    {
+      "id": "parse_tactics",
+      "provider": "parse",
+      "name": "Parse Tactics File",
+      "config": {
+        "name": "Parse Tactics File"
+      },
+      "ui": {
+        "position": {
+          "x": 260,
+          "y": 220
+        },
+        "measured": {
+          "width": 170,
+          "height": 66
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "tags",
+          "from": "dropper_tactics"
+        }
+      ]
+    },
+    {
+      "id": "preprocessor_tactics",
+      "provider": "preprocessor_langchain",
+      "name": "Chunk Tactics Text",
+      "config": {
+        "profile": "default",
+        "default": {
+          "mode": "strlen",
+          "splitter": "RecursiveCharacterTextSplitter",
+          "strlen": 1500
+        },
+        "name": "Chunk Tactics Text"
+      },
+      "ui": {
+        "position": {
+          "x": 480,
+          "y": 220
+        },
+        "measured": {
+          "width": 180,
+          "height": 66
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "text",
+          "from": "parse_tactics"
+        }
+      ]
+    },
+    {
+      "id": "embedding_transformer_tactics",
+      "provider": "embedding_transformer",
+      "name": "Embed Tactics",
+      "config": {
+        "profile": "miniLM",
+        "name": "Embed Tactics"
+      },
+      "ui": {
+        "position": {
+          "x": 720,
+          "y": 220
+        },
+        "measured": {
+          "width": 170,
+          "height": 66
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "documents",
+          "from": "preprocessor_tactics"
+        }
+      ]
+    },
+    {
+      "id": "chroma_tactics",
+      "provider": "chroma",
+      "name": "Store Coaching Tactics",
+      "config": {
+        "profile": "local",
+        "local": {
+          "host": "localhost",
+          "port": 8330,
+          "collection": "coach_tactics_demo"
+        },
+        "name": "Store Coaching Tactics"
+      },
+      "ui": {
+        "position": {
+          "x": 940,
+          "y": 185
+        },
+        "measured": {
+          "width": 190,
+          "height": 135
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "documents",
+          "from": "embedding_transformer_tactics"
+        }
+      ]
+    }
+  ],
+  "project_id": "cd592de2-0376-4cb2-8217-4a3232c66cf5",
+  "viewport": {
+    "x": 0,
+    "y": 0,
+    "zoom": 0.9
+  },
+  "version": 1
+}

@@ -1,0 +1,15 @@
+Clip ID: clip_050_055_passive_out_of_possession
+Match Phase: Late sequence, build-out and middle-third transition.
+Timestamp: 50.0s-55.0s
+Primary Theme: Disciplined structure without enough out-of-possession pressure.
+
+Detailed Sequence:
+At 50.0s the white team has possession in its own defensive third and looks to build out from the back. Red holds a disciplined mid-block shape but applies no meaningful pressure to the buildup.
+
+At 51.0s Liverpool in red builds from deep through the central defenders while Real Madrid sits in a mid-to-low block. The possession structure is clean, with two support options and good width.
+
+At 52.0s Real Madrid in white transitions across the middle third while Liverpool players in red maintain their defensive structure. The off-ball movement is disciplined, but the action again lacks the aggressive pressure required by the 6-second rule.
+
+The window scores 6.5/10 overall, with passing at 7.0/10 and possession at 7.5/10. The dribbling score is 0.0/10 because the sequence is not driven by meaningful ball-carrying actions, and defending stays at 5.0/10 because the team remains too passive out of possession.
+
+Observed Coaching Tags: passive defending, mid-block, build-out, transition, off-ball movement, supporting triangles, wing width, 6-second rule failure.

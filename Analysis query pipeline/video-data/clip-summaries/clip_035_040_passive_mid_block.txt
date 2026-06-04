@@ -1,0 +1,17 @@
+Clip ID: clip_035_040_passive_mid_block
+Match Phase: Midfield possession exchange leading into the attacking third.
+Timestamp: 35.0s-40.0s
+Primary Theme: Passive mid-block and a support lapse during progression.
+
+Detailed Sequence:
+At 35.0s the white team has possession in midfield and looks to progress against red's mid-block. Red's defensive shape is compact, but the pressure is delayed rather than disruptive.
+
+At 36.0s white transitions into another buildup action around midfield while red retreats into its mid-block. The team protects shape, but it does not step forward to create a high-pressure moment.
+
+At 37.0s a red player advances through the middle while white holds a structured defensive block. The sequence has no immediate pressing action and continues as a controlled possession phase.
+
+At 38.0s the red ball carrier dribbles toward the right flank in the attacking half but has only one clear support option. At 39.0s red reaches the attacking third and uses width to stretch the white defensive line.
+
+The window scores only 4.5/10 overall, with defending at 2.0/10. The coaching point is that the team keeps width, but the defensive line is too passive and the attacking support briefly drops below the required two-option structure.
+
+Observed Coaching Tags: passive mid-block, delayed reaction, defensive transition, right-flank dribble, support lapse, wing width, attacking third, stretched defense.

@@ -1,0 +1,483 @@
+{
+  "components": [
+    {
+      "id": "chat_1",
+      "provider": "chat",
+      "name": "Coach Chat",
+      "config": {
+        "hideForm": true,
+        "mode": "Source",
+        "parameters": {},
+        "type": "chat",
+        "name": "Coach Chat"
+      },
+      "ui": {
+        "position": {
+          "x": 20,
+          "y": 220
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      }
+    },
+    {
+      "id": "agent_deepagent_1",
+      "provider": "agent_deepagent",
+      "name": "Clip Analysis Orchestrator",
+      "config": {
+        "default": {
+          "advanced_mode": false,
+          "instructions": [
+            "You are the orchestration agent for a soccer coaching clip analysis demo.",
+            "For every coach question, first call the Clip Search tool to retrieve the single most relevant indexed clip summary. Treat the returned document as the source of truth for timestamp, match context, event sequence, and player actions.",
+            "Call the Coaching Tactics Search tool when tactical principles, team shape, decision rules, or uploaded coach guidance could affect the analysis. Use that result as coaching context, not as a replacement for the clip evidence.",
+            "Delegate only to the specialist subagents that are relevant to the coach question and retrieved clip: passing, positioning, speed, defending, and tactics. Ask each selected subagent for a 0-10 score, evidence from the clip, and one practical coaching adjustment.",
+            "Synthesize the specialist outputs into one answer for the coach. Include the clip timestamp, why the clip matched the query, individual skill scores, a combined score out of 10, and a concise coaching summary.",
+            "Do not invent footage, players, timestamps, or tactical instructions that are not present in the retrieved clip or uploaded tactics context. If a score is not relevant, mark it not assessed instead of forcing a number."
+          ]
+        },
+        "name": "Clip Analysis Orchestrator"
+      },
+      "ui": {
+        "position": {
+          "x": 260,
+          "y": 220
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "questions",
+          "from": "chat_1"
+        }
+      ]
+    },
+    {
+      "id": "response_answers_1",
+      "provider": "response_answers",
+      "name": "Return Coach Summary",
+      "config": {
+        "laneName": "answers",
+        "name": "Return Coach Summary"
+      },
+      "ui": {
+        "position": {
+          "x": 520,
+          "y": 220
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "answers",
+          "from": "agent_deepagent_1"
+        }
+      ]
+    },
+    {
+      "id": "llm_gmi_cloud_1",
+      "provider": "llm_gmi_cloud",
+      "name": "Shared GMI Cloud LLM",
+      "config": {
+        "profile": "deepseek-v3",
+        "deepseek-v3": {
+          "apikey": "${ROCKETRIDE_GMI_CLOUD_APIKEY}"
+        },
+        "name": "Shared GMI Cloud LLM"
+      },
+      "ui": {
+        "position": {
+          "x": 260,
+          "y": 390
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "control": [
+        {
+          "classType": "llm",
+          "from": "agent_deepagent_1"
+        },
+        {
+          "classType": "llm",
+          "from": "agent_deepagent_subagent_passing"
+        },
+        {
+          "classType": "llm",
+          "from": "agent_deepagent_subagent_positioning"
+        },
+        {
+          "classType": "llm",
+          "from": "agent_deepagent_subagent_speed"
+        },
+        {
+          "classType": "llm",
+          "from": "agent_deepagent_subagent_defending"
+        },
+        {
+          "classType": "llm",
+          "from": "agent_deepagent_subagent_tactics"
+        }
+      ]
+    },
+    {
+      "id": "tool_pipe_clip_search",
+      "provider": "tool_pipe",
+      "name": "Clip Search Tool",
+      "config": {
+        "type": "tool_pipe",
+        "tool_description": "Search the soccer_clip_summaries_demo Chroma collection and return the single most relevant clip summary document for the coach's natural language question. Use this before specialist scoring.",
+        "return_type": "documents",
+        "name": "Clip Search Tool"
+      },
+      "ui": {
+        "position": {
+          "x": 20,
+          "y": 540
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "control": [
+        {
+          "classType": "tool",
+          "from": "agent_deepagent_1"
+        }
+      ]
+    },
+    {
+      "id": "embedding_transformer_clip_query",
+      "provider": "embedding_transformer",
+      "name": "Embed Clip Query",
+      "config": {
+        "profile": "miniLM",
+        "name": "Embed Clip Query"
+      },
+      "ui": {
+        "position": {
+          "x": 240,
+          "y": 540
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "questions",
+          "from": "tool_pipe_clip_search"
+        }
+      ]
+    },
+    {
+      "id": "chroma_clip_search",
+      "provider": "chroma",
+      "name": "Clip Vector Search",
+      "config": {
+        "profile": "local",
+        "local": {
+          "host": "localhost",
+          "port": 8330,
+          "collection": "soccer_clip_summaries_demo"
+        },
+        "name": "Clip Vector Search"
+      },
+      "ui": {
+        "position": {
+          "x": 460,
+          "y": 500
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "questions",
+          "from": "embedding_transformer_clip_query"
+        }
+      ]
+    },
+    {
+      "id": "response_documents_clip",
+      "provider": "response_documents",
+      "name": "Return Clip Document",
+      "config": {
+        "laneName": "documents",
+        "name": "Return Clip Document"
+      },
+      "ui": {
+        "position": {
+          "x": 700,
+          "y": 540
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "documents",
+          "from": "chroma_clip_search"
+        }
+      ]
+    },
+    {
+      "id": "tool_pipe_tactics_search",
+      "provider": "tool_pipe",
+      "name": "Coaching Tactics Search Tool",
+      "config": {
+        "type": "tool_pipe",
+        "tool_description": "Search the coach_tactics_demo Chroma collection for uploaded coaching principles relevant to the coach question or retrieved clip. Return the most relevant tactics text as context for the tactics specialist and final synthesis.",
+        "return_type": "documents",
+        "name": "Coaching Tactics Search Tool"
+      },
+      "ui": {
+        "position": {
+          "x": 20,
+          "y": 720
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "control": [
+        {
+          "classType": "tool",
+          "from": "agent_deepagent_1"
+        }
+      ]
+    },
+    {
+      "id": "embedding_transformer_tactics_query",
+      "provider": "embedding_transformer",
+      "name": "Embed Tactics Query",
+      "config": {
+        "profile": "miniLM",
+        "name": "Embed Tactics Query"
+      },
+      "ui": {
+        "position": {
+          "x": 240,
+          "y": 720
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "questions",
+          "from": "tool_pipe_tactics_search"
+        }
+      ]
+    },
+    {
+      "id": "chroma_tactics_search",
+      "provider": "chroma",
+      "name": "Tactics Vector Search",
+      "config": {
+        "profile": "local",
+        "local": {
+          "host": "localhost",
+          "port": 8330,
+          "collection": "coach_tactics_demo"
+        },
+        "name": "Tactics Vector Search"
+      },
+      "ui": {
+        "position": {
+          "x": 460,
+          "y": 680
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "questions",
+          "from": "embedding_transformer_tactics_query"
+        }
+      ]
+    },
+    {
+      "id": "response_documents_tactics",
+      "provider": "response_documents",
+      "name": "Return Tactics Document",
+      "config": {
+        "laneName": "documents",
+        "name": "Return Tactics Document"
+      },
+      "ui": {
+        "position": {
+          "x": 700,
+          "y": 720
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "input": [
+        {
+          "lane": "documents",
+          "from": "chroma_tactics_search"
+        }
+      ]
+    },
+    {
+      "id": "agent_deepagent_subagent_passing",
+      "provider": "agent_deepagent_subagent",
+      "name": "Passing Analyst",
+      "config": {
+        "default": {
+          "advanced_mode": false,
+          "description": "Passing specialist for turnovers, pass selection, weight, angle, timing, body shape, first touch, and support options.",
+          "instructions": [
+            "Assess only the passing details present in the retrieved clip context.",
+            "Return a 0-10 passing score, two evidence points, and one coaching adjustment. If passing is not relevant, say not assessed."
+          ]
+        },
+        "name": "Passing Analyst"
+      },
+      "ui": {
+        "position": {
+          "x": 20,
+          "y": 930
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "control": [
+        {
+          "classType": "deepagent",
+          "from": "agent_deepagent_1"
+        }
+      ]
+    },
+    {
+      "id": "agent_deepagent_subagent_positioning",
+      "provider": "agent_deepagent_subagent",
+      "name": "Positioning Analyst",
+      "config": {
+        "default": {
+          "advanced_mode": false,
+          "description": "Positioning specialist for spacing, passing lanes, support angles, rest defense, overloads, cover shadows, and receiving shape.",
+          "instructions": [
+            "Assess only the positioning details present in the retrieved clip context.",
+            "Return a 0-10 positioning score, two evidence points, and one coaching adjustment. If positioning is not relevant, say not assessed."
+          ]
+        },
+        "name": "Positioning Analyst"
+      },
+      "ui": {
+        "position": {
+          "x": 220,
+          "y": 930
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "control": [
+        {
+          "classType": "deepagent",
+          "from": "agent_deepagent_1"
+        }
+      ]
+    },
+    {
+      "id": "agent_deepagent_subagent_speed",
+      "provider": "agent_deepagent_subagent",
+      "name": "Speed Analyst",
+      "config": {
+        "default": {
+          "advanced_mode": false,
+          "description": "Speed specialist for ball speed, decision speed, reaction speed, acceleration, transition tempo, and recovery pace.",
+          "instructions": [
+            "Assess only the speed and tempo details present in the retrieved clip context.",
+            "Return a 0-10 speed score, two evidence points, and one coaching adjustment. If speed is not relevant, say not assessed."
+          ]
+        },
+        "name": "Speed Analyst"
+      },
+      "ui": {
+        "position": {
+          "x": 430,
+          "y": 930
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "control": [
+        {
+          "classType": "deepagent",
+          "from": "agent_deepagent_1"
+        }
+      ]
+    },
+    {
+      "id": "agent_deepagent_subagent_defending",
+      "provider": "agent_deepagent_subagent",
+      "name": "Defending Analyst",
+      "config": {
+        "default": {
+          "advanced_mode": false,
+          "description": "Defending specialist for counterpressing, pressure angle, cover, compactness, recovery runs, duels, and transition defending.",
+          "instructions": [
+            "Assess only the defending details present in the retrieved clip context.",
+            "Return a 0-10 defending score, two evidence points, and one coaching adjustment. If defending is not relevant, say not assessed."
+          ]
+        },
+        "name": "Defending Analyst"
+      },
+      "ui": {
+        "position": {
+          "x": 630,
+          "y": 930
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "control": [
+        {
+          "classType": "deepagent",
+          "from": "agent_deepagent_1"
+        }
+      ]
+    },
+    {
+      "id": "agent_deepagent_subagent_tactics",
+      "provider": "agent_deepagent_subagent",
+      "name": "Tactics Analyst",
+      "config": {
+        "default": {
+          "advanced_mode": false,
+          "description": "Tactics specialist for team principles, coach-uploaded tactics, shape, triggers, risk management, and collective decision rules.",
+          "instructions": [
+            "Use the uploaded coaching tactics context when it is provided by the orchestrator.",
+            "Return a 0-10 tactics score, two evidence points, and one coaching adjustment. If tactics context is missing, state that and score only from the clip evidence."
+          ]
+        },
+        "name": "Tactics Analyst"
+      },
+      "ui": {
+        "position": {
+          "x": 840,
+          "y": 930
+        },
+        "nodeType": "default",
+        "formDataValid": true
+      },
+      "control": [
+        {
+          "classType": "deepagent",
+          "from": "agent_deepagent_1"
+        }
+      ]
+    }
+  ],
+  "project_id": "5918836b-8884-4402-a1a2-0f3765ccd89d",
+  "version": 1,
+  "isLocked": false,
+  "snapToGrid": true,
+  "snapGridSize": [
+    10,
+    10
+  ],
+  "docRevision": 4
+}
