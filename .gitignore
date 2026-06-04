@@ -10,3 +10,4 @@ __pycache__/
 *.mp4
 data/football_vid.mov
 football_vid.mov
+.rocketride
